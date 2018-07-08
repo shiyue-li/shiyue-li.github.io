@@ -144,7 +144,7 @@ section {
   max-width: 1000px;
 }
 
-.process {
+.process, .research {
   max-width: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
