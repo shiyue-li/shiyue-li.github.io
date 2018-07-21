@@ -144,8 +144,8 @@ section {
   max-width: 1000px;
 }
 
-.process, .research {
-  max-width: 1000px;
+.math {
+  max-width: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,7 +157,7 @@ section {
 }
 
 .case-studies {
-  max-width: 1000px;
+  max-width: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
