@@ -10,7 +10,6 @@ body {
   font-family: Roboto;
   margin: 0;
   padding: 0;
-  background-color: #F0F0F0;
 }
 
 a {
@@ -457,11 +456,11 @@ section {
 
 .case-detail-link {
   position: relative;
-  padding: 10px 15px;
+  padding: 10px 10px;
   /* border: 1px solid #fafafa; */
   color: #593eda;
   border-radius: 2px;
-  background: #f1f1f1;
+  background: #f0f0f0;
   margin-right: 1em;
   width:100%;
 }
