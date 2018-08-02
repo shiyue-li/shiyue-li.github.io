@@ -456,14 +456,14 @@ section {
 
 .case-detail-link {
   position: relative;
-  padding: 10px 15px 10px;
+  padding: 15px 30px;
   /* border: 1px solid #fafafa; */
   color: #593eda;
   border-radius: 2px;
   background: #f1f1f1;
   margin-right: 1em;
 }
-/* 
+/*
 img.case-detail-link {
   max-width: 100%;
   padding: 10px 15px 10px;
