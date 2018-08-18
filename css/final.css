@@ -334,6 +334,13 @@ section {
   line-height: 1.8em;
 }
 
+ul li {
+    font-size: 16px;
+    color: #777777;
+    letter-spacing: 0;
+    line-height: 1.8em;
+}
+
 .read-more {
   display: inline-block;
   width: 100%;
