@@ -94,11 +94,12 @@ footer {
 }
 
 .icons a:first-child {
-  padding: 4px 4px 4px 0;
+  padding: 4px 4px 50px 50;
+  padding-left: 132px
 }
 
 .icons a {
-  padding: 4px;
+  padding: 5px;
 }
 
 @media all and (max-width: 460px) {
@@ -215,20 +216,21 @@ section {
           /*justify-content: space-between;*/
 }
 
+
 .download-resume {
   /* Rectangle 3: */
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 40px;
   background: #5A54AF;
   /* Download Resume: */
   font-family: Roboto;
-  font-size: 15px;
-  /*padding: 15px 50px;*/
+  font-size: 20px;
+  padding: 15px 50px;
   color: #C3D5FF;
-  padding: 18px 0;
-  width: 296px;
+  padding: 100px 0;
+  width: 1000px;
   text-align: center;
-  letter-spacing: 0;
+  letter-spacing: 1px;
   border-radius: 2px;
 }
 
