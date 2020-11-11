@@ -499,14 +499,14 @@ img.case-detail-link {
       display: block;
       width: 100%;
       padding:25px;
-      /* text-align: center; */
+      text-align: center;
   }
 }
 
 .content-case-study {
   max-width: 1000px;
   display: block;
-  /* margin: 0 auto; */
+  margin: 0 auto;
 }
 
 .content-case-study p {
