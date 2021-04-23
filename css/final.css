@@ -237,10 +237,10 @@ section {
 .title {
   /* My Process: */
   font-family: Roboto;
-  font-weight: bold;
+  font-weight: 100;
   margin: 0;
-  font-size: 44px;
-  color: #000000;
+  font-size: 38px;
+  color: #3d3d3d;
   letter-spacing: 0;
   line-height: 0.4em;
 }
