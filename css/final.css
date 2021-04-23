@@ -23,7 +23,15 @@ a:hover {
   opacity: 0.8;
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
+}
 
+.article {
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 100;
+  color: #777777;
+  text-decoration: none;
 }
 
 footer {
@@ -179,6 +187,8 @@ section {
   color: #5A54AF;
   font-weight: 300;
 }
+
+
 
 .hero-left {
   width: 400px;
