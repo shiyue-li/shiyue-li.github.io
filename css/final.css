@@ -13,9 +13,11 @@ body {
 }
 
 a {
-  text-decoration: none;
+  font-style: normal;
+  color: #777777;
   -webkit-transition: 0.1s ease-in;
   transition: 0.1s ease-in;
+  text-decoration: none;
 }
 
 a:hover {
@@ -27,8 +29,16 @@ a:hover {
 
 .article {
   font-family: Roboto;
-  font-size: 18px;
+  font-size: 17px;
   font-style: italic;
+  font-weight: 300;
+  color: #777777;
+  text-decoration: none;
+}
+
+.journal {
+  font-family: Roboto;
+  font-size: 16px;
   font-weight: 100;
   color: #777777;
   text-decoration: none;
@@ -185,7 +195,8 @@ section {
 .subtitle {
   font-size: 28px;
   color: #5A54AF;
-  font-weight: 300;
+  font-weight: 100;
+  font-style: thin;
 }
 
 
@@ -200,7 +211,9 @@ section {
 
 .hero-right p {
   /* color: #929292; */
+  font-family: Roboto;
   font-size: 16px;
+  font-style: 50;
   color: #777777;
   letter-spacing: 0;
   /* line-height: 25px; */
@@ -483,12 +496,6 @@ ul li {
   margin-right: 1em;
   width:100%;
 }
-/*
-img.case-detail-link {
-  max-width: 100%;
-  padding: 10px 15px 10px;
-  position: relative;
-} */
 
 @media all and (max-width: 981px) {
   .hero-left {
