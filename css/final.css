@@ -207,6 +207,14 @@ section {
   font-style: thin;
 }
 
+.name {
+  font-family: Georgia;
+  font-size: 28px;
+  color: #0f52ba;
+  font-weight: 200;
+  font-style: thin;
+}
+
 .hero-left {
   width: 400px;
 }
@@ -547,7 +555,6 @@ ul li {
 
 .content-case-study a {
   color: #0f52ba;
-  text-decoration: none;
 }
 
 .content-case-study h1 {
