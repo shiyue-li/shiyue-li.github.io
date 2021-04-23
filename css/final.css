@@ -31,15 +31,23 @@ a:hover {
   font-family: Roboto;
   font-size: 17px;
   font-style: italic;
-  font-weight: 300;
+  font-weight: 500;
   color: #777777;
-  text-decoration: none;
+  /* text-decoration: none; */
+}
+
+.link {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  color: #777777;
+  /* text-decoration: none; */
 }
 
 .journal {
   font-family: Roboto;
   font-size: 16px;
-  font-weight: 100;
+  font-weight: 500;
   color: #777777;
   text-decoration: none;
 }
@@ -194,12 +202,10 @@ section {
 
 .subtitle {
   font-size: 28px;
-  color: #5A54AF;
+  color: #0f52ba;
   font-weight: 100;
   font-style: thin;
 }
-
-
 
 .hero-left {
   width: 400px;
@@ -225,8 +231,9 @@ section {
 }
 
 .hero-right p a {
-  color: #574cdd;
-  text-decoration: underline;
+   font-family: Roboto;
+  color: #0f52ba;
+  text-decoration: none;
 }
 
 .icons {
@@ -244,7 +251,7 @@ section {
   /* Rectangle 3: */
   display: inline-block;
   margin-top: 40px;
-  background: #5A54AF;
+  background: #0f52ba;
   /* Download Resume: */
   font-family: Roboto;
   font-size: 20px;
@@ -313,7 +320,7 @@ section {
 .process-item h3 {
   /* Discover: */
   font-size: 28px;
-  color: #5A54AF;
+  color: #0f52ba;
   letter-spacing: 0;
 }
 
@@ -423,7 +430,7 @@ ul li {
 
 .results-content hr {
   width: 30px;
-  border: 3px solid #5A54AF;
+  border: 3px solid #0f52ba;
 }
 
 /* .main-case-study img {
@@ -442,7 +449,7 @@ ul li {
   font-family: Roboto;
   font-weight: bold;
   font-size: 22px;
-  color: #5A54AF;
+  color: #0f52ba;
   letter-spacing: 0;
 }
 
@@ -539,8 +546,8 @@ ul li {
 }
 
 .content-case-study a {
-  color: #574cdd;
-  text-decoration: underline;
+  color: #0f52ba;
+  text-decoration: none;
 }
 
 .content-case-study h1 {
