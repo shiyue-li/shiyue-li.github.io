@@ -208,7 +208,7 @@ section {
 }
 
 .name {
-  font-family: Georgia;
+  font-family: Roboto;
   font-size: 28px;
   color: #0f52ba;
   font-weight: 200;
@@ -225,7 +225,7 @@ section {
 
 .hero-right p {
   /* color: #929292; */
-  font-family: Roboto;
+  font-family: Georgia;
   font-size: 16px;
   font-style: 50;
   color: #777777;
