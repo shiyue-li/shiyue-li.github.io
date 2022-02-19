@@ -1,26 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://shiyue-li.github.io/mathcamp/</loc>
-    <lastmod>2018-07-08T14:16:44-06:00</lastmod>
-  </url>
-  
-  <url>
+    <priority>0</priority>
+  </url><url>
     <loc>https://shiyue-li.github.io/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://shiyue-li.github.io/</loc>
-    <lastmod>2018-07-08T14:16:44-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://shiyue-li.github.io/tags/</loc>
-    <priority>0</priority>
   </url>
-  
 </urlset>
