@@ -1,3 +1,6 @@
+/* forest green #228B22 */
+/* deep blue #228B22 */
+
 * {
   box-sizing: border-box;
   text-rendering: optimizeLegibility;
@@ -202,7 +205,7 @@ section {
 
 .subtitle {
   font-size: 28px;
-  color: #0f52ba;
+  color: #228B22;
   font-weight: 100;
   font-style: thin;
 }
@@ -210,7 +213,7 @@ section {
 .name {
   font-family: Georgia;
   font-size: 28px;
-  color: #0f52ba;
+  color: #228B22;
   font-weight: 200;
   font-style: thin;
 }
@@ -240,7 +243,7 @@ section {
 
 .hero-right p a {
    font-family: Georgia;
-  color: #0f52ba;
+  color: #228B22;
   text-decoration: none;
 }
 
@@ -259,7 +262,7 @@ section {
   /* Rectangle 3: */
   display: inline-block;
   margin-top: 40px;
-  background: #0f52ba;
+  background: #228B22;
   /* Download Resume: */
   font-family: Georgia;
   font-size: 20px;
@@ -328,7 +331,7 @@ section {
 .process-item h3 {
   /* Discover: */
   font-size: 28px;
-  color: #0f52ba;
+  color: #228B22;
   letter-spacing: 0;
 }
 
@@ -438,7 +441,7 @@ ul li {
 
 .results-content hr {
   width: 30px;
-  border: 3px solid #0f52ba;
+  border: 3px solid #228B22;
 }
 
 /* .main-case-study img {
@@ -457,7 +460,7 @@ ul li {
   font-family: Georgia;
   font-weight: bold;
   font-size: 22px;
-  color: #0f52ba;
+  color: #228B22;
   letter-spacing: 0;
 }
 
@@ -466,7 +469,7 @@ ul li {
   font-family: Georgia;
   font-weight: 300;
   font-size: 24px;
-  color: #000000;
+  color: #228B22;
   letter-spacing: 0;
   line-height: 39px;
 }
@@ -554,7 +557,7 @@ ul li {
 }
 
 .content-case-study a {
-  color: #0f52ba;
+  color: #228B22;
 }
 
 .content-case-study h1 {
@@ -641,7 +644,7 @@ ul li {
 }
 
 .active {
-  color: #574CDD !important;
+  color: #228B22 !important;
   transition: 0.2s ease-in-out;
-  border-bottom: 3px solid #574CDD;
+  border-bottom: 3px solid #228B22;
 }
