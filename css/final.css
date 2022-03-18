@@ -10,7 +10,7 @@
 
 body {
   font-size: 16px;
-  font-family: Georgia;
+  font-family: Sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -31,7 +31,7 @@ a:hover {
 }
 
 .article {
-  font-family: Georgia;
+  font-family: Sans-serif;
   font-size: 17px;
   font-style: italic;
   font-weight: 500;
@@ -40,7 +40,7 @@ a:hover {
 }
 
 .link {
-  font-family: Georgia;
+  font-family: Sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #777777;
@@ -48,7 +48,7 @@ a:hover {
 }
 
 .journal {
-  font-family: Georgia;
+  font-family: Sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #777777;
@@ -211,7 +211,7 @@ section {
 }
 
 .name {
-  font-family: Georgia;
+  font-family: Sans-serif;
   font-size: 28px;
   color: #228B22;
   font-weight: 200;
@@ -228,7 +228,7 @@ section {
 
 .hero-right p {
   /* color: #929292; */
-  font-family: Georgia;
+  font-family: Sans-serif;
   font-size: 16px;
   font-style: 50;
   color: #777777;
@@ -242,7 +242,7 @@ section {
 }
 
 .hero-right p a {
-   font-family: Georgia;
+   font-family: Sans-serif;
   color: #228B22;
   text-decoration: none;
 }
@@ -264,7 +264,7 @@ section {
   margin-top: 40px;
   background: #228B22;
   /* Download Resume: */
-  font-family: Georgia;
+  font-family: Sans-serif;
   font-size: 20px;
   padding: 15px 50px;
   color: #C3D5FF;
@@ -277,7 +277,7 @@ section {
 
 .title {
   /* My Process: */
-  font-family: Georgia;
+  font-family: Sans-serif;
   font-weight: 100;
   margin: 0;
   font-size: 38px;
@@ -390,7 +390,7 @@ ul li {
   border: solid 2px #E1E1E1;
   padding: 18px 0;
   text-align: center;
-  color: #574CDD;
+  color: #228B22;
   font-weight: 500;
   -webkit-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
@@ -457,7 +457,7 @@ ul li {
 
 .main-case-study .subtitle {
   /* Mobile App Design: */
-  font-family: Georgia;
+  font-family: Sans-serif;
   font-weight: bold;
   font-size: 22px;
   color: #228B22;
@@ -466,7 +466,7 @@ ul li {
 
 .main-case-study .summary {
   /* The objective of thi: */
-  font-family: Georgia;
+  font-family: Sans-serif;
   font-weight: 300;
   font-size: 24px;
   color: #228B22;
@@ -544,7 +544,7 @@ ul li {
 
 .content-case-study p {
   /* Each member of our t: */
-  font-family: Georgia;
+  font-family: Sans-serif;
   font-size: 19px;
   color: #676767;
   letter-spacing: 0;
