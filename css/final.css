@@ -1,5 +1,5 @@
-/* forest green #228B22 */
-/* deep blue #228B22 */
+/* forest green #426BBA */
+/* deep blue #426BBA */
 
 * {
   box-sizing: border-box;
@@ -205,7 +205,7 @@ section {
 
 .subtitle {
   font-size: 28px;
-  color: #228B22;
+  color: #426BBA;
   font-weight: 100;
   font-style: thin;
 }
@@ -213,7 +213,7 @@ section {
 .name {
   font-family: Palatino;
   font-size: 28px;
-  color: #228B22;
+  color: #426BBA;
   font-weight: 200;
   font-style: thin;
 }
@@ -243,7 +243,7 @@ section {
 
 .hero-right p a {
    font-family: Palatino;
-  color: #228B22;
+  color: #426BBA;
   text-decoration: none;
 }
 
@@ -262,7 +262,7 @@ section {
   /* Rectangle 3: */
   display: inline-block;
   margin-top: 40px;
-  background: #228B22;
+  background: #426BBA;
   /* Download Resume: */
   font-family: Palatino;
   font-size: 20px;
@@ -331,7 +331,7 @@ section {
 .process-item h3 {
   /* Discover: */
   font-size: 28px;
-  color: #228B22;
+  color: #426BBA;
   letter-spacing: 0;
 }
 
@@ -390,7 +390,7 @@ ul li {
   border: solid 2px #E1E1E1;
   padding: 18px 0;
   text-align: center;
-  color: #228B22;
+  color: #426BBA;
   font-weight: 500;
   -webkit-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
@@ -441,7 +441,7 @@ ul li {
 
 .results-content hr {
   width: 30px;
-  border: 3px solid #228B22;
+  border: 3px solid #426BBA;
 }
 
 /* .main-case-study img {
@@ -460,7 +460,7 @@ ul li {
   font-family: Palatino;
   font-weight: bold;
   font-size: 22px;
-  color: #228B22;
+  color: #426BBA;
   letter-spacing: 0;
 }
 
@@ -469,7 +469,7 @@ ul li {
   font-family: Palatino;
   font-weight: 300;
   font-size: 24px;
-  color: #228B22;
+  color: #426BBA;
   letter-spacing: 0;
   line-height: 39px;
 }
@@ -557,7 +557,7 @@ ul li {
 }
 
 .content-case-study a {
-  color: #228B22;
+  color: #426BBA;
 }
 
 .content-case-study h1 {
@@ -644,7 +644,7 @@ ul li {
 }
 
 .active {
-  color: #228B22 !important;
+  color: #426BBA !important;
   transition: 0.2s ease-in-out;
-  border-bottom: 3px solid #228B22;
+  border-bottom: 3px solid #426BBA;
 }
