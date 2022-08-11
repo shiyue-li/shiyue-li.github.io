@@ -39,6 +39,15 @@ a:hover {
   /* text-decoration: none; */
 }
 
+.author {
+  font-family: Palatino;
+  font-size: 17px;
+  font-style: italic;
+  font-weight: 900;
+  color: #000000;
+  /* text-decoration: none; */
+}
+
 .link {
   font-family: Palatino;
   font-size: 16px;
