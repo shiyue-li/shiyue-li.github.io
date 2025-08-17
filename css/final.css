@@ -221,24 +221,24 @@ section {
 
 .name {
   font-family: Palatino;
-  font-size: 30px;
+  font-size: 28px;
   color: #426BBA;
   font-weight: 300;
   font-style: normal;
 }
 
 .hero-left {
-  width: 400px;
+  width: 280px;
 }
 
 .hero-right {
-  width: 500px;
+  width: 670px;
 }
 
 .hero-right p {
   /* color: #929292; */
   font-family: Palatino;
-  font-size: 16px;
+  font-size: 15px;
   font-style: 50;
   color: #000000;
   letter-spacing: 0;
@@ -331,7 +331,7 @@ section {
 
 .process-item p {
   /* I collaborate with s: */
-  font-size: 16px;
+  font-size: 15px;
   color: #000000;
   letter-spacing: 0;
   line-height: 1.8em;
@@ -380,14 +380,14 @@ section {
 }
 
 .case-study-item p {
-  font-size: 16px;
+  font-size: 15px;
   color: #000000;
   letter-spacing: 0;
   line-height: 1.8em;
 }
 
 ul li {
-    font-size: 16px;
+    font-size: 15px;
     color: #000000;
     letter-spacing: 0;
     line-height: 1.8em;
@@ -468,7 +468,7 @@ ul li {
   /* Mobile App Design: */
   font-family: Palatino;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 20px;
   color: #426BBA;
   letter-spacing: 0;
 }
@@ -477,7 +477,7 @@ ul li {
   /* The objective of thi: */
   font-family: Palatino;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 15px;
   color: #426BBA;
   letter-spacing: 0;
   line-height: 39px;
@@ -554,7 +554,7 @@ ul li {
 .content-case-study p {
   /* Each member of our t: */
   font-family: Palatino;
-  font-size: 19px;
+  font-size: 15px;
   color: #000000;
   letter-spacing: 0;
   line-height: 30px;
@@ -597,7 +597,7 @@ ul li {
 
 .case-details-item p {
   line-height: 1.8em;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 @media all and (max-width:1040px) {
