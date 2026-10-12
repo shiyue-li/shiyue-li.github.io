@@ -1,6 +1,6 @@
 baseURL = "https://shiyue-li.github.io/"
 languageCode = "en-us"
-publishDir = "/Users/octoberbear/Documents/GitHub/shiyue-li.github.io"
+publishDir = "/Users/octoberbear/Documents (local)/GitHub/shiyue-li.github.io"
 title = "Shiyue Li"
 theme = "hugo-lodi-theme"
 googleAnalytics = "UA-XXXXXXXX-Y"
