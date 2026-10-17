@@ -221,9 +221,12 @@ a:hover { color: var(--accent-strong); }
 
 .nowrap { white-space: nowrap; }
 
+/* 1rem keeps "Donald J. Lewis Assistant Professor (non-tenure-track)"
+   on one line beside either photo on desktop. */
 .role {
   margin: 0 0 1rem;
   color: var(--muted);
+  font-size: 1rem;
   line-height: 1.5;
   text-wrap: pretty;
 }
