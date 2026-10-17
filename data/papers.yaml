@@ -1,11 +1,11 @@
 # Papers, newest first. The list is numbered automatically.
 #
-#   title      Paper title. Markdown works, e.g. *K*-rings for an italic K.
+#   title      Paper title. Markdown works, and LaTeX math between $...$, e.g. $K$-rings.
 #   url        Main link for the title (usually arXiv).
 #   coauthors  Optional list of collaborators, each with a name and optional url.
 #   venue      Optional journal or proceedings, with venue_url.
 #   links      Optional extra links (slides, code, ...), each with a name and url.
-#   abstract   Optional. Hidden until the reader clicks "Abstract".
+#   abstract   Optional. Hidden until the reader clicks "Abstract". Math: $\psi$, $h^*$, ...
 
 - title: "Chow polynomials and chain polynomials of matroids are not log-concave"
   url: https://arxiv.org/abs/2610.17135
@@ -29,14 +29,14 @@
     normal complete algebraic scheme. Positivity properties of line bundles can be
     phrased using positivity of Snapper polynomials. We investigate their magic
     positivity and real-rootedness. We introduce zonotopal classes in the Grothendieck
-    K-ring of vector bundles of the toric variety for any loopless matroid, and
+    $K$-ring of vector bundles of the toric variety for any loopless matroid, and
     analogous classes on the Deligne--Mumford--Knudsen compactification of stable
     pointed curves. We prove that their Snapper polynomials are magic positive, so their
-    coefficients are nonnegative and their h*-polynomials are real-rooted. For cotangent
-    line bundles whose first Chern classes are distinct ψ-classes, which are not
-    zonotopal, we nonetheless prove that their h*-polynomials are real-rooted, whereas
-    their Snapper polynomials are magic positive if and only if n⩽7. More generally, we
-    introduce saturated and weakly saturated K-classes of matroids, which furnish a
+    coefficients are nonnegative and their $h^*$-polynomials are real-rooted. For cotangent
+    line bundles whose first Chern classes are distinct $\psi$-classes, which are not
+    zonotopal, we nonetheless prove that their $h^*$-polynomials are real-rooted, whereas
+    their Snapper polynomials are magic positive if and only if $n \leqslant 7$. More generally, we
+    introduce saturated and weakly saturated $K$-classes of matroids, which furnish a
     sufficient and a necessary condition for magic positivity of Snapper polynomials in
     terms of their dragon Hall--Rado polymatroids.
 
@@ -52,10 +52,10 @@
     conjectures in the setting of Chow polynomials of matroids with flag and complete
     building sets, which we introduce. Our proofs analyze the underlying toric varieties
     and show that the toric varieties undergo geometric changes that preserve
-    gamma-positivity, as one varies the building set to achieve complete and flag
+    $\gamma$-positivity, as one varies the building set to achieve complete and flag
     building sets. In the complete case, we construct a simplicial complex whose
-    f-vector is the gamma-vector. We also obtain a new combinatorial formula for the
-    gamma-expansion of the Poincaré polynomial of the Deligne--Mumford--Knudsen moduli
+    $f$-vector is the $\gamma$-vector. We also obtain a new combinatorial formula for the
+    $\gamma$-expansion of the Poincaré polynomial of the Deligne--Mumford--Knudsen moduli
     space of rational stable marked curves.
 
 - title: "Structural properties of nested set complexes"
@@ -67,10 +67,10 @@
       url: https://sites.google.com/view/ferroniluis
   abstract: >-
     We prove vertex decomposability and convex ear decompositions of nested set
-    complexes. As an application, we prove that the h-vector is strongly flawless, and
+    complexes. As an application, we prove that the $h$-vector is strongly flawless, and
     in particular, top-heavy. We specialize to the boundary complex of
     Deligne--Mumford--Knudsen compactification of rational stable marked curves to
-    derive new decompositions and new formulas for its h-vector.
+    derive new decompositions and new formulas for its $h$-vector.
 
 - title: "Chow polynomials of rank-uniform labeled posets"
   url: https://arxiv.org/abs/2511.13819
@@ -93,9 +93,9 @@
   url: https://arxiv.org/abs/2308.12285
   coauthors:
     - name: "Joshua Brakensiek"
-      url: https://web.stanford.edu/~jbrakens/
-    - name: "Christopher Eur"
-      url: https://people.math.harvard.edu/~ceur/
+      url: https://jbrakensiek.github.io/
+    - name: "Chris Eur"
+      url: https://www.math.cmu.edu/~ceur/
     - name: "Matt Larson"
       url: https://mattlarson2399.github.io
   venue: "International Mathematics Research Notices (2025)"
@@ -104,7 +104,7 @@
     We introduce the notion of Kapranov degrees. These are the multidegrees of the
     embedding of the Deligne--Mumford--Knudsen moduli space of rational stable curves
     with marked points into a product of projective spaces via the complete linear
-    series of psi-classes. This framework unifies intersection numbers computed by
+    series of $\psi$-classes. This framework unifies intersection numbers computed by
     Witten, Silversmith, Castravet-Tevelev, Postnikov, Cavalieri-Gillespie-Monin, and
     Gillespie-Griffins-Levinson. We prove a positivity characterization and an upper
     bound, using matroid theory and the theory of error correcting codes.
@@ -116,18 +116,18 @@
       url: https://sites.google.com/site/emilyclader/
     - name: "Chiara Damiolini"
       url: https://chiaradamiolini.wixsite.com/1289
-    - name: "Christopher Eur"
-      url: https://people.math.harvard.edu/~ceur/
+    - name: "Chris Eur"
+      url: https://www.math.cmu.edu/~ceur/
     - name: "Daoji Huang"
-      url: https://www.daojihuang.me
+      url: https://www.daojihuang.me/
   venue: "International Mathematics Research Notices (2024)"
   venue_url: https://academic.oup.com/imrn/article-abstract/2024/12/9743/7654041?login=false
   abstract: >-
     We study the connection between multimatroids and moduli spaces of rational curves
     with cyclic action. Multimatroids are generalizations of matroids and delta-matroids
     introduced by Bouchet, which naturally arise in topological graph theory. This
-    framework generalizes the previous connection between type-A permutohedral varieties
-    (Losev--Manin moduli spaces) and matroids, and the connection between type-B
+    framework generalizes the previous connection between type-$A$ permutohedral varieties
+    (Losev--Manin moduli spaces) and matroids, and the connection between type-$B$
     permutohedral varieties (Batyrev--Blume moduli spaces) and delta-matroids. We
     introduce and study nef divisors and independence polytopal complexes of
     multimatroids. We effectively prove that the volume polynomials of these divisors are
@@ -144,7 +144,7 @@
     lines. This gives a strengthening and a new proof of results by Hamidoune, and
     Chudnovsky--Seymour.
 
-- title: "*K*-rings of wonderful varieties and matroids"
+- title: "$K$-rings of wonderful varieties and matroids"
   url: https://arxiv.org/abs/2210.03169
   coauthors:
     - name: "Matt Larson"
@@ -156,9 +156,9 @@
   venue: "Advances in Mathematics 441 (2024)"
   venue_url: https://www.sciencedirect.com/science/article/abs/pii/S0001870824000690
   abstract: >-
-    We study the *K*-rings of wonderful compactifications of hyperplane arrangement
+    We study the $K$-rings of wonderful compactifications of hyperplane arrangement
     complements and of arbitrary matroids. We prove a Hirzebruch--Riemann--Roch-type
-    formula, an isomorphism between the integral K-rings and the Chow rings, replacing
+    formula, an isomorphism between the integral $K$-rings and the Chow rings, replacing
     the Chern character. We introduce Euler characteristic of vector bundles of
     arbitrary matroids as matroid invariants. We apply these tools to
     Deligne--Mumford--Knudsen moduli spaces of stable rational curves with marked
@@ -210,7 +210,6 @@
     - name: "Siddarth Kannan"
       url: https://sites.google.com/view/siddarthkannan/about-me
     - name: "Stefano Serpente"
-      url: https://sites.google.com/view/stefano-serpente/home-page
     - name: "Claudia He Yun"
       url: https://www.claudiayun.com/
   venue: "Advances in Geometry 23(3) (2023)"
@@ -246,11 +245,11 @@
   url: https://arxiv.org/abs/2108.00875
   coauthors:
     - name: "Marvin Anas Hahn"
-      url: https://sites.google.com/site/marvinanashahn/
+      url: https://www.marvinanashahn.com/
   venue: "Combinatorial Theory, 2(3) (2022)"
   venue_url: https://escholarship.org/uc/item/6569z31w#main
   abstract: >-
-    We compute the intersection numbers of tropical psi-classes on tropical heavy/light
+    We compute the intersection numbers of tropical $\psi$-classes on tropical heavy/light
     Hassett spaces, generalizing a result of Kerber--Markwig.
 
 - title: "Chow ring of heavy/light Hassett spaces via tropical geometry"

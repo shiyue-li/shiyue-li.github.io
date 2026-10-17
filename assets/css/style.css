@@ -444,6 +444,9 @@ details.abstract p {
 }
 
 .aside { color: var(--muted); }
+
+/* KaTeX math: a touch smaller than its 1.21em default so it sits evenly in body text. */
+.katex { font-size: 1.08em; }
 .dated-list .aside a { color: inherit; }
 .dated-list .aside a:hover { color: var(--accent); }
 

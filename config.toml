@@ -5,6 +5,14 @@ title = "Shiyue Li"
 hasCJKLanguage = true
 disableKinds = ["taxonomy", "term"]
 
+# Lets abstracts and titles use LaTeX math between $...$ (or $$...$$ for
+# displayed math); it is typeset with KaTeX when the site is built.
+[markup.goldmark.extensions.passthrough]
+    enable = true
+    [markup.goldmark.extensions.passthrough.delimiters]
+        inline = [["$", "$"], ["\\(", "\\)"]]
+        block = [["$$", "$$"], ["\\[", "\\]"]]
+
 # Lets the templates resize photos in static/img automatically,
 # so the page loads small versions instead of the multi-MB originals.
 # Resizing drops color profiles, so save photos as sRGB first; iPhone
@@ -39,7 +47,7 @@ disableKinds = ["taxonomy", "term"]
     "I am a Donald J. Lewis assistant professor at the [University of Michigan](https://lsa.umich.edu/math), mentored by [David Speyer](https://websites.umich.edu/~speyer/).",
     "I work in algebraic geometry and combinatorics. More specifically, I study combinatorial structures in algebraic varieties and their moduli spaces. I am broadly interested in questions connected to number theory, algebraic topology, and algebraic K-theory.",
     "From 2023 to 2025, I was a member at the [Institute for Advanced Study](https://www.ias.edu), mentored by [June Huh](https://web.math.princeton.edu/~huh/) and [Federico Ardila-Mantilla](https://fardila.com).",
-    "In 2023, I did my PhD in mathematics at [Brown University](https://www.brown.edu/academics/math/), where I was fortunate to be advised by [Melody Chan](https://www.math.brown.edu/~mtchan/).",
+    "In 2023, I did my PhD in mathematics at [Brown University](https://mathematics.brown.edu/), where I was fortunate to be advised by [Melody Chan](https://www.math.brown.edu/mchan2/).",
     "Prior, I spent wonderful four years at [Harvey Mudd College](https://www.hmc.edu); my undergrad thesis work was guided by [Dagan Karp](https://www.math.hmc.edu/~dk/).",
     ]
     # Highlighted note shown under the bio. Delete the line to hide it.
