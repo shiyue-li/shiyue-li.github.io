@@ -1,0 +1,12 @@
+{{ define "main" }}
+    {{ with .Content }}
+    <article class="section prose">
+        {{ with $.Title }}<h1 class="section-title">{{ . }}</h1>{{ end }}
+        {{ . }}
+    </article>
+    {{ end }}
+
+    {{ if site.Params.teaching.enable }}
+    {{ partial "teaching.html" . }}
+    {{ end }}
+{{ end }}

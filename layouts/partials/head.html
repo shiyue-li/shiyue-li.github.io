@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ with .Title }}{{ . }} · {{ end }}{{ site.Title }}{{ end }}</title>
+<meta name="description" content="{{ site.Params.description }}">
+<meta name="theme-color" content="#f7f4ee" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1b1a18" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="{{ .Permalink }}">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ site.Title }}">
+<meta property="og:description" content="{{ site.Params.description }}">
+<meta property="og:url" content="{{ .Permalink }}">
+{{ with site.Params.description_photo }}<meta property="og:image" content="{{ printf "img/%s" . | absURL }}">{{ end }}
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="{{ printf "img/%s" site.Params.favicon | relURL }}" type="image/png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400..600;1,7..72,400..500&display=swap">
+{{/* Only the characters of the name are downloaded from this font. */}}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500&text={{ site.Params.hero.subtitle | urlquery }}&display=swap">
+
+{{ $css := resources.Get "css/style.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">

@@ -1,0 +1,29 @@
+{{ define "main" }}
+    {{ if site.Params.hero.enable }}
+    {{ partial "hero.html" . }}
+    {{ end }}
+
+    {{ if site.Params.research.enable }}
+    {{ partial "research.html" . }}
+    {{ end }}
+
+    {{ if site.Params.talks.enable }}
+    {{ partial "talks.html" . }}
+    {{ end }}
+
+    {{ if site.Params.teaching.enable }}
+    {{ partial "teaching.html" . }}
+    {{ end }}
+
+    {{ if site.Params.expository.enable }}
+    {{ partial "expository.html" . }}
+    {{ end }}
+
+    {{ if site.Params.travel.enable }}
+    {{ partial "travel.html" . }}
+    {{ end }}
+
+    {{ if site.Params.misc.enable }}
+    {{ partial "misc.html" . }}
+    {{ end }}
+{{ end }}

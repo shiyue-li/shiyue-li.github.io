@@ -1,0 +1,41 @@
+<section id="music" class="section prose">
+    <h2 class="section-title">{{ site.Params.misc.title }}</h2>
+    <p class="lead">I am an avid amateur musician and mountaineer.</p>
+
+    <h3 class="subsection-title">Piano</h3>
+    <p>
+        My primary instrument is the piano, which I started playing at age 4. During college, I had a blast learning from <a href="https://www.pomona.edu/directory/people/gayle-blankenburg">Gayle Blankenburg</a>, as well as from a group of extremely talented peers in her studio.
+        I’ve been recently working on:
+    </p>
+    <ul class="repertoire">
+        <li>Bach - Goldberg Variations, BWV 988</li>
+        <li>Schubert - Fantasia in F-minor four 4 hands, D. 940</li>
+        <li>Beethoven – Spring Sonata for violin and piano</li>
+    </ul>
+
+    <h3 class="subsection-title">Classical Guitar</h3>
+    <p>
+        My secondary instrument is the classical guitar, also known as Spanish guitar, which I started learning at age 12. During college, I had fun studying guitar and baroque lute with <a href="https://www.sandersguitar.com">Jack Sanders</a>, and playing in the Pomona College Guitar Quartet from 2024 to 2016.
+        I particularly love playing Bach's music on a guitar. I'm slowly working on:
+    </p>
+    <ul class="repertoire">
+        <li>Tárrega - Recuerdos de la alhamabra</li>
+        <li>Bach – Chaconne, Partita No. 2, BWV 1004</li>
+    </ul>
+
+    <h3 class="subsection-title">Other Music</h3>
+    <p>I enjoy thinking and chatting about music theory, composition, and ethnomusicology. I have also sung in a cappella while at Yale.</p>
+
+    <h3 class="subsection-title">Alpine Climbs</h3>
+    <p>I can sometimes be found in the mountains.</p>
+    {{ with resources.Get "img/climbing.jpeg" }}
+    {{ $sm := .Resize "480x q80" }}
+    {{ $lg := .Resize "960x q80" }}
+    <figure class="figure">
+        <a href="{{ "img/climbing.jpeg" | relURL }}">
+            <img src="{{ $lg.RelPermalink }}" srcset="{{ $sm.RelPermalink }} 480w, {{ $lg.RelPermalink }} 960w" sizes="(max-width: 640px) 100vw, 26rem" width="{{ $lg.Width }}" height="{{ $lg.Height }}" loading="lazy" alt="Climber on a snowy ridge of the Aiguilles d'Entrèves">
+        </a>
+        <figcaption>Traversing the border of France and Italy on Aiguilles d'Entrèves (3600m).</figcaption>
+    </figure>
+    {{ end }}
+</section>

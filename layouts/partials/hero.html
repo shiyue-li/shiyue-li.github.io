@@ -1,0 +1,35 @@
+{{ $hero := site.Params.hero }}
+<section id="about" class="hero">
+    <div class="hero-head">
+        {{ with resources.Get (printf "img/%s" $hero.avatar) }}
+        {{ $sm := .Fill "240x240 Center q85" }}
+        {{ $lg := .Fill "480x480 Center q85" }}
+        <img class="avatar" src="{{ $lg.RelPermalink }}" srcset="{{ $sm.RelPermalink }} 240w, {{ $lg.RelPermalink }} 480w" sizes="(max-width: 640px) 96px, 176px" width="176" height="176" alt="Photo of {{ site.Title }}">
+        {{ end }}
+        <div class="hero-id">
+            <h1 class="name">{{ $hero.subtitle }}</h1>
+            {{ if or $hero.position $hero.affiliation }}
+            <p class="role">
+                {{- with $hero.position }}{{ . }}{{ end -}}
+                {{- if and $hero.position $hero.affiliation }}<br>{{ end -}}
+                {{- with $hero.affiliation }}{{ . }}{{ end -}}
+            </p>
+            {{ end }}
+            {{ with $hero.links }}
+            <ul class="profile-links">
+                {{ range . }}<li><a href="{{ .url }}">{{ .name }}</a></li>{{ end }}
+            </ul>
+            {{ end }}
+        </div>
+    </div>
+
+    <div class="bio">
+        {{ range $hero.hero_right }}
+        <p>{{ . | markdownify }}</p>
+        {{ end }}
+    </div>
+
+    {{ with $hero.notice }}
+    <p class="notice">{{ . | markdownify }}</p>
+    {{ end }}
+</section>

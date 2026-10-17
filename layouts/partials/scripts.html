@@ -1,0 +1,49 @@
+<script>
+    (function () {
+        // Hairline under the nav once the page scrolls.
+        var nav = document.querySelector(".site-nav");
+        if (nav) {
+            var onScroll = function () { nav.classList.toggle("is-scrolled", window.scrollY > 8); };
+            window.addEventListener("scroll", onScroll, { passive: true });
+            onScroll();
+        }
+
+        // Highlight the nav link for the section in view.
+        var links = Array.prototype.slice.call(document.querySelectorAll('.nav-links a[href^="#"]'));
+        if (links.length && "IntersectionObserver" in window) {
+            var byId = {};
+            links.forEach(function (a) { byId[a.hash.slice(1)] = a; });
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (!entry.isIntersecting) return;
+                    links.forEach(function (a) { a.removeAttribute("aria-current"); });
+                    var link = byId[entry.target.id];
+                    if (!link) return;
+                    link.setAttribute("aria-current", "true");
+                    // On phones the link row scrolls sideways; keep the active link visible.
+                    var list = link.closest(".nav-links");
+                    if (list && list.scrollWidth > list.clientWidth) {
+                        list.scrollTo({ left: link.offsetLeft - 16, behavior: "smooth" });
+                    }
+                });
+            }, { rootMargin: "-40% 0px -55% 0px" });
+            Object.keys(byId).forEach(function (id) {
+                var section = document.getElementById(id);
+                if (section) observer.observe(section);
+            });
+        }
+
+        // "Show all abstracts" button.
+        var toggle = document.querySelector("[data-toggle-abstracts]");
+        var abstracts = document.querySelectorAll("details.abstract");
+        if (toggle && abstracts.length) {
+            toggle.hidden = false;
+            toggle.addEventListener("click", function () {
+                var open = toggle.getAttribute("aria-pressed") !== "true";
+                abstracts.forEach(function (d) { d.open = open; });
+                toggle.setAttribute("aria-pressed", String(open));
+                toggle.textContent = open ? "Hide all abstracts" : "Show all abstracts";
+            });
+        }
+    })();
+</script>
