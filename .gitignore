@@ -1,2 +1,10 @@
 # Hugo image cache (regenerated on build)
 /resources/_gen/
+
+# A local `hugo` build writes the site here; GitHub Actions builds its own
+/public/
+.hugo_build.lock
+
+# Mac Finder and Claude Code files
+.DS_Store
+.claude/

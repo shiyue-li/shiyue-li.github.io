@@ -1,6 +1,5 @@
 baseURL = "https://www.shiyue.li/"
 languageCode = "en-us"
-publishDir = "/Users/octoberbear/Documents (local)/GitHub/shiyue-li.github.io"
 title = "Shiyue Li"
 hasCJKLanguage = true
 disableKinds = ["taxonomy", "term"]
@@ -28,6 +27,11 @@ disableKinds = ["taxonomy", "term"]
     [[module.mounts]]
         source = "static/img"
         target = "assets/img"
+
+# Keeps the resized photos in Hugo's cache folder, which the GitHub
+# Actions workflow saves between runs, so they aren't redone every time.
+[caches.images]
+    dir = ":cacheDir/images"
 
 [params]
     description = "Shiyue Li 李詩樂 (李诗乐), Donald J. Lewis Assistant Professor of Mathematics at the University of Michigan. Algebraic geometry and combinatorics."
