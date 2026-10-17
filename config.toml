@@ -38,6 +38,8 @@ disableKinds = ["taxonomy", "term"]
     description_photo = "avatar.jpg"
     favicon = "favicon.png"
     logo = "logo.png"
+    # Visitor stats at https://shiyue-li.goatcounter.com. Delete the line to stop counting.
+    goatcounter = "shiyue-li"
 
 [params.nav]
     enable = true
