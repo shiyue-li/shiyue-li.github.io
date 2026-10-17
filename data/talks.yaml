@@ -1,0 +1,193 @@
+# Invited talks, newest first.
+#
+#   date   Month and year, e.g. "Aug 2027".
+#   title  Event or seminar name. Markdown works.
+#   url    Optional link to the event page.
+
+- date: "Aug 2027"
+  title: "LG&TBQ 2027, Bielefeld, Germany"
+
+- date: "Jul 2027"
+  title: "Collaborative Workshop in Algebraic Geometry \"WIAG 3\" 2027, Oaxaca, Mexico"
+
+- date: "Jan 2027"
+  title: "JMM-AWM \"Women in Algebraic Geometry\" 2027, Chicago"
+
+- date: "Dec 2026"
+  title: "Workshop on Enumerative Geometry of Matroids, Oberwolfach"
+
+- date: "Nov 2026"
+  title: "ALGECOM-XXVII"
+
+- date: "Sep 2026"
+  title: "Combinatorics Seminar, University of Michigan"
+
+- date: "Sep 2026"
+  title: "BIRS-CMO Workshop on Algebra and Geometry of Matroids, Oaxaca, Mexico"
+
+- date: "Jun 2026"
+  title: "Workshop on Algebraic Combinatorics in Pisa, Università di Pisa, Italy"
+
+- date: "May 2026"
+  title: "Institut des Sciences Mini-courses on Geometry and Combinatorics of Moduli Spaces, Montréal"
+
+- date: "Apr 2026"
+  title: "Algebraic Geometry Seminar, University of Michigan"
+  url: https://lsa.umich.edu/math/news-events/all-events.detail.html/146609-21899347.html
+
+- date: "Mar 2026"
+  title: "AMS Sectional on Geometry of Moduli Spaces, Boston College"
+  url: https://www.ams.org/meetings/sectional/2331_special.html
+
+- date: "Apr 2025"
+  title: "Algebraic Geometry Seminar, University of Pennsylvania"
+  url: https://www.math.upenn.edu/events/seminars/algebraic-geometry-seminar
+
+- date: "Jan 2025"
+  title: "AMS Special Session on Cohomology of Arithmetic Groups, Mapping Class Groups, and Moduli Spaces, Seattle"
+  url: https://jointmathematicsmeetings.org/meetings/national/jmm2025/2314_program_ss27.html#title
+
+- date: "Oct 2024"
+  title: "Geometry of Matroids, Institute for Advanced Study"
+  url: https://www.ias.edu/math/events/geometry-matroids-workshop
+
+- date: "Sep 2024"
+  title: "Moduli spaces of curves, moduli spaces of graphs and graph complexes, ETH Zurich"
+  url: https://eth-its.ethz.ch/activities/Graph-Moduli.html
+
+- date: "Jul 2024"
+  title: "BIRS Workshop -- Combinatorics and Geometry of Moduli Spaces of Curves, Banff, Canada"
+  url: https://www.birs.ca/events/2024/5-day-workshops/24w5200
+
+- date: "Jul 2024"
+  title: "Suzhou Workshop on matroid theory, Suzhou, China"
+  url: https://people.math.wisc.edu/~lmaxim/Suzhou24.html
+
+- date: "Jun 2024"
+  title: "Arrangements, Matroids and Logarithmic Vector Fields, Oberwolfach, Germany"
+  url: https://www.mfo.de/occasion/2425/www_view
+
+- date: "Apr 2024"
+  title: "Columbia Algebraic Geometry Seminar"
+  url: https://sites.google.com/view/nathanchen/seminars/columbia-ag-seminar
+
+- date: "Apr 2024"
+  title: "Tufts Algebra Seminar"
+  url: https://sites.google.com/view/tuftsagents/home
+
+- date: "Mar 2024"
+  title: "IAS Mathematical Conversations"
+  url: https://www.ias.edu/event-series/mathematical-conversations
+
+- date: "Feb 2024"
+  title: "UMN Combinatorics Seminar"
+  url: https://www.daojihuang.me/seminar
+
+- date: "Jan 2024"
+  title: "JMM AMS Special Session on Combinatorial Perspectives on Algebraic Curves and their Moduli"
+  url: https://www.jointmathematicsmeetings.org/meetings/national/jmm2024/2300_program_ss17.html#title
+
+- date: "Jan 2024"
+  title: "F1 World Seminar (online)"
+  url: https://funworldseminar.wordpress.com/2022/11/15/the-sun-also-rises-a-review/
+
+- date: "Oct 2023"
+  title: "Preparatory lectures for Chow Lectures, Max Planck Institute, Leipzig, Germany"
+  url: https://www.mis.mpg.de/calendar/conferences/2023/chow.html
+
+- date: "Sep 2023"
+  title: "Bernoulli Center Workshop, EPFL, Switzerland"
+  url: https://bernoulli.epfl.ch/programs/hodge-and-k-theory-meet-combinatorics/
+
+- date: "Aug 2023"
+  title: "BIRS Workshop -- Curves: Algebraic, Tropical, and Logarithmic, Banff, Canada"
+  url: http://www.birs.ca/events/2023/5-day-workshops/23w5101
+
+- date: "Jul 2023"
+  title: "FPSAC 2023, UC Davis"
+  url: http://fpsac23.math.ucdavis.edu
+
+- date: "Jul 2023"
+  title: "AGNES Summer School on Intersection Theory of Moduli Spaces, Providence, RI"
+  url: https://sites.google.com/site/agneshomepage/brown-2023-agnes-summer-school
+
+- date: "Mar 2023"
+  title: "AIM Workshop, GEMS in Combinatorics, San Jose, CA"
+  url: https://aimath.org/workshops/upcoming/gemscombin/
+
+- date: "Mar 2023"
+  title: "BIRS Workshop -- Algebraic Aspects of Matroids, Banff, Canada"
+  url: http://www.birs.ca/events/2023/5-day-workshops/23w5149
+
+- date: "Feb 2023"
+  title: "Growing up in Sciences, Bowdoin College"
+  url: https://www.cns.nyu.edu/events/growingupinscience/
+
+- date: "Feb 2023"
+  title: "AWM Student Seminar Series, University of Pittsburgh"
+  url: https://www.mathematics.pitt.edu/content/pitt-awm-student-seminar-series
+
+- date: "Feb 2023"
+  title: "Combinatorics Seminar, University of Michigan"
+  url: https://events.umich.edu/group/4885
+
+- date: "Dec 2022"
+  title: "Fields Institute Seminar (online)"
+  url: http://www.fields.utoronto.ca/activities/22-23/matroids-seminar
+
+- date: "Nov 2022"
+  title: "University of Washington Algebra and Algebraic Geometry Seminar, UW"
+  url: https://math.washington.edu/events/series/algebra-and-algebraic-geometry-seminar
+
+- date: "Nov 2022"
+  title: "Harvard-MIT Combinatorics Seminar, Harvard University"
+  url: https://math.mit.edu/combin/
+
+- date: "Oct 2022"
+  title: "AMS Special Section on Combinatorial Algebraic Geometry, UMass Amherst"
+  url: http://www.ams.org/meetings/sectional/2301_program_ss18.html
+
+- date: "Jun 2022"
+  title: "AWM Research Symposium, University of Minnesota"
+  url: https://awm-math.org/meetings/awm-research-symposium/
+
+- date: "Jun 2022"
+  title: "RATCOW, University of Oregon"
+  url: https://pages.uoregon.edu/ddugger/ratcow.html
+
+- date: "May 2022"
+  title: "BATMOBYLE, Brown University"
+  url: https://math.dartmouth.edu/~auel/BATMOBYLE/index.html
+
+- date: "Apr 2022"
+  title: "Joint Mathematics Meetings AWM Special Session"
+  url: https://www.jointmathematicsmeetings.org//jmm
+
+- date: "Dec 2021"
+  title: "Canadian Math Society: Combinatorics and Geometry of Moduli Spaces"
+  url: https://www2.cms.math.ca/Events/winter21/schedule_daily
+
+- date: "Sep 2021"
+  title: "Front Range Algebraic Geometry and Number Theory, Colorado State"
+  url: https://sites.google.com/view/fragmentseminar/
+
+- date: "Aug 2021"
+  title: "SIAM Conferences in Algebraic Geometry"
+  url: https://www.siam.org/conferences/cm/program/ag21
+
+- date: "Apr 2021"
+  title: "Moduli Across the Pandemic"
+  url: https://sites.google.com/bc.edu/map/home
+
+- date: "Apr 2021"
+  title: "Tropical Geometry in Frankfurt (TGiF) Seminar"
+  url: https://www.uni-frankfurt.de/76756909/TGiF_Tropical_Geometry_in_Frankfurt
+
+- date: "Apr 2021"
+  title: "AMS Spring Eastern Sectional Meeting on Moduli of Curves"
+
+- date: "Oct 2020"
+  title: "Algebra Seminar, Brown University"
+
+- date: "Nov 2021"
+  title: "American Graduate Student Algebraic Geometry Seminar"

@@ -1,0 +1,266 @@
+# Papers, newest first. The list is numbered automatically.
+#
+#   title      Paper title. Markdown works, and LaTeX math between $...$, e.g. $K$-rings.
+#   url        Main link for the title (usually arXiv).
+#   coauthors  Optional list of collaborators, each with a name and optional url.
+#   venue      Optional journal or proceedings, with venue_url.
+#   links      Optional extra links (slides, code, ...), each with a name and url.
+#   abstract   Optional. Hidden until the reader clicks "Abstract". Math: $\psi$, $h^*$, ...
+
+- title: "Chow polynomials and chain polynomials of matroids are not log-concave"
+  url: https://arxiv.org/abs/2610.17135
+  coauthors:
+    - name: "Gergely Bérczi"
+      url: https://sites.google.com/view/gergely-berczi/home
+    - name: "Basile Coron"
+      url: https://sites.google.com/view/basilecoron/accueil/
+    - name: "Chris Eur"
+      url: https://www.math.cmu.edu/~ceur/
+  abstract: >-
+    We construct explicit counterexamples from finite geometries to log-concavity of
+    Chow polynomials, chain polynomials, and augmented Chow polynomials of matroids,
+    disproving real-rootedness conjectures of Huh--Stevens, Ferroni--Schröter,
+    Athanasiadis–Kalampogia-Evangelinou from the lowest possible ranks.
+
+- title: "Magic positivity of Snapper polynomials for matroids"
+  url: https://arxiv.org/abs/2609.24917
+  abstract: >-
+    Snapper polynomials are Euler characteristics of tensor powers of line bundles on a
+    normal complete algebraic scheme. Positivity properties of line bundles can be
+    phrased using positivity of Snapper polynomials. We investigate their magic
+    positivity and real-rootedness. We introduce zonotopal classes in the Grothendieck
+    $K$-ring of vector bundles of the toric variety for any loopless matroid, and
+    analogous classes on the Deligne--Mumford--Knudsen compactification of stable
+    pointed curves. We prove that their Snapper polynomials are magic positive, so their
+    coefficients are nonnegative and their $h^*$-polynomials are real-rooted. For cotangent
+    line bundles whose first Chern classes are distinct $\psi$-classes, which are not
+    zonotopal, we nonetheless prove that their $h^*$-polynomials are real-rooted, whereas
+    their Snapper polynomials are magic positive if and only if $n \leqslant 7$. More generally, we
+    introduce saturated and weakly saturated $K$-classes of matroids, which furnish a
+    sufficient and a necessary condition for magic positivity of Snapper polynomials in
+    terms of their dragon Hall--Rado polymatroids.
+
+- title: "Matroid analogues of Gal's conjecture"
+  url: https://arxiv.org/abs/2604.04550
+  coauthors:
+    - name: "Basile Coron"
+      url: https://sites.google.com/view/basilecoron/accueil/
+    - name: "Luis Ferroni"
+      url: https://sites.google.com/view/ferroniluis
+  abstract: >-
+    We formulate and prove matroid analogues of Charney--Davis, Gal, and Nevo--Petersen
+    conjectures in the setting of Chow polynomials of matroids with flag and complete
+    building sets, which we introduce. Our proofs analyze the underlying toric varieties
+    and show that the toric varieties undergo geometric changes that preserve
+    $\gamma$-positivity, as one varies the building set to achieve complete and flag
+    building sets. In the complete case, we construct a simplicial complex whose
+    $f$-vector is the $\gamma$-vector. We also obtain a new combinatorial formula for the
+    $\gamma$-expansion of the Poincaré polynomial of the Deligne--Mumford--Knudsen moduli
+    space of rational stable marked curves.
+
+- title: "Structural properties of nested set complexes"
+  url: https://arxiv.org/abs/2601.05188
+  coauthors:
+    - name: "Basile Coron"
+      url: https://sites.google.com/view/basilecoron/accueil/
+    - name: "Luis Ferroni"
+      url: https://sites.google.com/view/ferroniluis
+  abstract: >-
+    We prove vertex decomposability and convex ear decompositions of nested set
+    complexes. As an application, we prove that the $h$-vector is strongly flawless, and
+    in particular, top-heavy. We specialize to the boundary complex of
+    Deligne--Mumford--Knudsen compactification of rational stable marked curves to
+    derive new decompositions and new formulas for its $h$-vector.
+
+- title: "Chow polynomials of rank-uniform labeled posets"
+  url: https://arxiv.org/abs/2511.13819
+  coauthors:
+    - name: "Basile Coron"
+      url: https://sites.google.com/view/basilecoron/accueil/
+    - name: "Luis Ferroni"
+      url: https://sites.google.com/view/ferroniluis
+  abstract: >-
+    We introduce the notion of UMEL-shellable posets. They are posets admitting edge
+    lexicographical labeling with certain uniformality and monotonicity conditions.
+    These include uniform matroids, projective and affine geometries, Dowling geometries
+    (including braid matroids of type A and B) and more generally rank-uniform
+    supersolvable lattices. We prove that the Chow polynomials, the augmented Chow
+    polynomials, and the chain polynomials associated with those posets only have real
+    roots, thus making simultaneous progress towards conjectures by Ferroni–Schröter,
+    Huh–Stevens, and Athanasiadis–Kalampogia-Evangelinou.
+
+- title: "Kapranov degrees"
+  url: https://arxiv.org/abs/2308.12285
+  coauthors:
+    - name: "Joshua Brakensiek"
+      url: https://jbrakensiek.github.io/
+    - name: "Chris Eur"
+      url: https://www.math.cmu.edu/~ceur/
+    - name: "Matt Larson"
+      url: https://mattlarson2399.github.io
+  venue: "International Mathematics Research Notices (2025)"
+  venue_url: https://academic.oup.com/imrn/article-abstract/2025/20/rnaf306/8280232?login=false
+  abstract: >-
+    We introduce the notion of Kapranov degrees. These are the multidegrees of the
+    embedding of the Deligne--Mumford--Knudsen moduli space of rational stable curves
+    with marked points into a product of projective spaces via the complete linear
+    series of $\psi$-classes. This framework unifies intersection numbers computed by
+    Witten, Silversmith, Castravet-Tevelev, Postnikov, Cavalieri-Gillespie-Monin, and
+    Gillespie-Griffins-Levinson. We prove a positivity characterization and an upper
+    bound, using matroid theory and the theory of error correcting codes.
+
+- title: "Multimatroids and rational curves with cyclic action"
+  url: https://arxiv.org/abs/2311.09314
+  coauthors:
+    - name: "Emily Clader"
+      url: https://sites.google.com/site/emilyclader/
+    - name: "Chiara Damiolini"
+      url: https://chiaradamiolini.wixsite.com/1289
+    - name: "Chris Eur"
+      url: https://www.math.cmu.edu/~ceur/
+    - name: "Daoji Huang"
+      url: https://www.daojihuang.me/
+  venue: "International Mathematics Research Notices (2024)"
+  venue_url: https://academic.oup.com/imrn/article-abstract/2024/12/9743/7654041?login=false
+  abstract: >-
+    We study the connection between multimatroids and moduli spaces of rational curves
+    with cyclic action. Multimatroids are generalizations of matroids and delta-matroids
+    introduced by Bouchet, which naturally arise in topological graph theory. This
+    framework generalizes the previous connection between type-$A$ permutohedral varieties
+    (Losev--Manin moduli spaces) and matroids, and the connection between type-$B$
+    permutohedral varieties (Batyrev--Blume moduli spaces) and delta-matroids. We
+    introduce and study nef divisors and independence polytopal complexes of
+    multimatroids. We effectively prove that the volume polynomials of these divisors are
+    Lorentzian.
+
+- title: "Equivariant log-concavity of independence sequences of claw-free graphs"
+  url: https://www.mat.univie.ac.at/~slc/wpapers/FPSAC2023/87.pdf
+  venue: "Séminaire Lotharingien de Combinatoire 89B (2023)"
+  venue_url: https://www.mat.univie.ac.at/~slc/wpapers/FPSAC2023/87.pdf
+  abstract: >-
+    We prove that the graded permutation representation by independent vertex sets of
+    any claw-free graph is strongly equivariantly log-concave. Our proof reduces the
+    problem to the hard Lefschetz theorem on the cohomology of a product of projective
+    lines. This gives a strengthening and a new proof of results by Hamidoune, and
+    Chudnovsky--Seymour.
+
+- title: "$K$-rings of wonderful varieties and matroids"
+  url: https://arxiv.org/abs/2210.03169
+  coauthors:
+    - name: "Matt Larson"
+      url: https://mattlarson2399.github.io
+    - name: "Sam Payne"
+      url: https://sites.lsa.umich.edu/sdpayne/
+    - name: "Nick Proudfoot"
+      url: https://pages.uoregon.edu/njp/
+  venue: "Advances in Mathematics 441 (2024)"
+  venue_url: https://www.sciencedirect.com/science/article/abs/pii/S0001870824000690
+  abstract: >-
+    We study the $K$-rings of wonderful compactifications of hyperplane arrangement
+    complements and of arbitrary matroids. We prove a Hirzebruch--Riemann--Roch-type
+    formula, an isomorphism between the integral $K$-rings and the Chow rings, replacing
+    the Chern character. We introduce Euler characteristic of vector bundles of
+    arbitrary matroids as matroid invariants. We apply these tools to
+    Deligne--Mumford--Knudsen moduli spaces of stable rational curves with marked
+    points.
+
+- title: "Wonderful compactifications and rational curves with cyclic action"
+  url: https://arxiv.org/abs/2208.05463
+  coauthors:
+    - name: "Emily Clader"
+      url: https://sites.google.com/site/emilyclader/
+    - name: "Chiara Damiolini"
+      url: https://chiaradamiolini.wixsite.com/1289
+    - name: "Rohini Ramadas"
+      url: https://sites.google.com/view/rohini-ramadas/home
+  venue: "Forum of Mathematics, Sigma 11 (2023)"
+  venue_url: https://www.cambridge.org/core/journals/forum-of-mathematics-sigma/article/wonderful-compactifications-and-rational-curves-with-cyclic-action/0811738BEDE71A067CB7876742615252
+  abstract: >-
+    We prove that the moduli space of rational curves with cyclic action, constructed in
+    our previous work, is realizable as a wonderful compactification of the complement
+    of a hyperplane arrangement in a product of projective spaces. By proving a general
+    result on such wonderful compactifications, we conclude that this moduli space is
+    Chow-equivalent to an explicit toric variety (whose fan can be understood as a
+    tropical version of the moduli space), from which a computation of its Chow ring
+    follows.
+
+- title: "Equivariant log-concavity of graph matchings"
+  url: https://arxiv.org/abs/2202.08828
+  venue: "Algebraic Combinatorics 6 (2023)"
+  venue_url: https://alco.centre-mersenne.org/articles/10.5802/alco.284/
+  abstract: >-
+    We prove that the graded vector space spanned by matchings in any graph is strongly
+    equivariantly log-concave, viewed as a graded permutation representation of the
+    graph automorphism group. Our proof constructs equivariant injections by reducing to
+    the hard Lefschetz theorem.
+
+- title: "Relative Bott--Samelson varieties"
+  url: https://arxiv.org/abs/2011.04814
+  venue: "La Matematica 2 (2023)"
+  venue_url: https://link.springer.com/article/10.1007/s44007-023-00054-1
+  abstract: >-
+    We construct relative Bott--Samelson resolutions of singularities of Richardson
+    varieties. We then applied it to give a resolution of singularities for the
+    Brill-Noether variety with imposed ramification on twice-marked elliptic curves,
+    studied by Chan--Osserman--Pflueger.
+
+- title: "Topology of tropical moduli space of weighted stable curves in higher genus"
+  url: https://arxiv.org/abs/2010.11767
+  coauthors:
+    - name: "Siddarth Kannan"
+      url: https://sites.google.com/view/siddarthkannan/about-me
+    - name: "Stefano Serpente"
+    - name: "Claudia He Yun"
+      url: https://www.claudiayun.com/
+  venue: "Advances in Geometry 23(3) (2023)"
+  venue_url: https://www.degruyter.com/document/doi/10.1515/advgeom-2023-0009/html
+  links:
+    - name: "Slides"
+      url: /slides/top-hassett-slides.pdf
+  abstract: >-
+    We prove the simple connectivity of the moduli spaces of weighted stable tropical
+    curves of volume one, for all higher genus and all rational weights. We also compute
+    their Euler characteristics.
+
+- title: "Permutohedral complexes and rational curves with cyclic action"
+  url: https://arxiv.org/abs/2104.06526
+  coauthors:
+    - name: "Emily Clader"
+      url: https://sites.google.com/site/emilyclader/
+    - name: "Chiara Damiolini"
+      url: https://chiaradamiolini.wixsite.com/1289
+    - name: "Daoji Huang"
+      url: https://www.daojihuang.me/
+    - name: "Rohini Ramadas"
+      url: https://sites.google.com/view/rohini-ramadas/home
+  venue: "manuscripta mathematica (2022)"
+  venue_url: https://trebuchet.public.springernature.app/get_content/80b0685b-fd41-4024-bbea-1bdff2c16340
+  abstract: >-
+    We construct a moduli space of rational curves with finite-order automorphism and
+    weighted orbits, and studied a three-way bijection between the boundary strata of
+    the moduli space, the faces of a polytopal complex, and certain cosets of the
+    complex reflection group.
+
+- title: "Intersecting psi-classes on tropical Hassett spaces"
+  url: https://arxiv.org/abs/2108.00875
+  coauthors:
+    - name: "Marvin Anas Hahn"
+      url: https://www.marvinanashahn.com/
+  venue: "Combinatorial Theory, 2(3) (2022)"
+  venue_url: https://escholarship.org/uc/item/6569z31w#main
+  abstract: >-
+    We compute the intersection numbers of tropical $\psi$-classes on tropical heavy/light
+    Hassett spaces, generalizing a result of Kerber--Markwig.
+
+- title: "Chow ring of heavy/light Hassett spaces via tropical geometry"
+  url: https://arxiv.org/abs/1910.10883
+  coauthors:
+    - name: "Siddarth Kannan"
+      url: https://sites.google.com/view/siddarthkannan/about-me
+    - name: "Dagan Karp"
+      url: https://www.math.hmc.edu/~dk/
+  venue: "Journal of Combinatorial Theory, Series A. 178C (2021)"
+  venue_url: https://www.sciencedirect.com/science/article/pii/S0097316520301400
+  abstract: >-
+    We compute the Chow ring of heavy/light Hassett spaces of genus zero via tropical
+    compactification and toric intersection theory.

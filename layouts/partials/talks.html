@@ -1,0 +1,12 @@
+{{/* Talks come from data/talks.yaml */}}
+<section id="talks" class="section">
+    <h2 class="section-title">{{ site.Params.talks.title }}</h2>
+    <ul class="dated-list">
+        {{ range $t := site.Data.talks }}
+        <li>
+            <span class="when">{{ $t.date }}</span>
+            <span class="what">{{ with $t.url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $t.title | markdownify }}</a>{{ else }}{{ $t.title | markdownify }}{{ end }}</span>
+        </li>
+        {{ end }}
+    </ul>
+</section>

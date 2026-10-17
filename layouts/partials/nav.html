@@ -1,0 +1,17 @@
+{{ $home := cond .IsHome "" ("/" | relURL) }}
+<header class="site-nav">
+    <nav class="inner" aria-label="Main">
+        <a class="logo" href="{{ "/" | relURL }}">
+            <img src="{{ printf "img/%s" site.Params.logo | relURL }}" alt="{{ site.Title }}, home" width="36" height="36">
+        </a>
+        <ul class="nav-links">
+            <li><a href="{{ $home }}#about">About</a></li>
+            {{ with site.Params.research }}{{ if .enable }}<li><a href="{{ $home }}#research">{{ .nav | default .title }}</a></li>{{ end }}{{ end }}
+            {{ with site.Params.talks }}{{ if .enable }}<li><a href="{{ $home }}#talks">{{ .nav | default .title }}</a></li>{{ end }}{{ end }}
+            {{ with site.Params.teaching }}{{ if .enable }}<li><a href="{{ $home }}#lecture-notes">{{ .nav | default .title }}</a></li>{{ end }}{{ end }}
+            {{ with site.Params.expository }}{{ if .enable }}<li><a href="{{ $home }}#expository">{{ .nav | default .title }}</a></li>{{ end }}{{ end }}
+            {{ with site.Params.travel }}{{ if .enable }}<li><a href="{{ $home }}#travel">{{ .nav | default .title }}</a></li>{{ end }}{{ end }}
+            {{ with site.Params.misc }}{{ if .enable }}<li><a href="{{ $home }}#music">{{ .nav | default .title }}</a></li>{{ end }}{{ end }}
+        </ul>
+    </nav>
+</header>

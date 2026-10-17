@@ -1,0 +1,51 @@
+{{/* Papers come from data/papers.yaml */}}
+{{ $papers := site.Data.papers }}
+<section id="research" class="section">
+    <div class="section-head">
+        <h2 class="section-title">{{ site.Params.research.title }}</h2>
+        <button type="button" class="text-button" data-toggle-abstracts aria-pressed="false" hidden>Show all abstracts</button>
+    </div>
+
+    <ol class="papers" reversed>
+        {{ $n := len $papers }}
+        {{ range $i, $p := $papers }}
+        <li class="paper">
+            <span class="paper-num" aria-hidden="true">{{ sub $n $i }}</span>
+            <div class="paper-body">
+                <h3 class="paper-title"><a href="{{ $p.url }}" target="_blank" rel="noopener">{{ $p.title | markdownify }}</a></h3>
+
+                {{ with $p.coauthors }}
+                {{ $count := len . }}
+                <p class="paper-authors">with
+                    {{- range $j, $c := . -}}
+                    {{- if gt $j 0 -}}
+                        {{- if eq (add $j 1) $count }}{{ if gt $count 2 }},{{ end }} and{{ else }},{{ end -}}
+                    {{- end }}
+                    {{ with $c.url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $c.name }}</a>{{ else }}{{ $c.name }}{{ end }}
+                    {{- end -}}
+                </p>
+                {{ end }}
+
+                {{ $arxiv := "" }}
+                {{ if in $p.url "arxiv.org/abs/" }}{{ $arxiv = index (split $p.url "/abs/") 1 }}{{ end }}
+                {{ if or $p.venue $arxiv $p.links }}
+                <p class="paper-meta">
+                    {{ with $p.venue }}
+                    <span class="venue">{{ with $p.venue_url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $p.venue | markdownify }}</a>{{ else }}{{ $p.venue | markdownify }}{{ end }}</span>
+                    {{ end }}
+                    {{ with $arxiv }}<a href="{{ $p.url }}" target="_blank" rel="noopener">arXiv:{{ . }}</a>{{ end }}
+                    {{ range $p.links }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>{{ end }}
+                </p>
+                {{ end }}
+
+                {{ with $p.abstract }}
+                <details class="abstract">
+                    <summary>Abstract</summary>
+                    <p>{{ . | markdownify }}</p>
+                </details>
+                {{ end }}
+            </div>
+        </li>
+        {{ end }}
+    </ol>
+</section>

@@ -1,0 +1,108 @@
+baseURL = "https://www.shiyue.li/"
+languageCode = "en-us"
+publishDir = "/Users/octoberbear/Documents (local)/GitHub/shiyue-li.github.io"
+title = "Shiyue Li"
+hasCJKLanguage = true
+disableKinds = ["taxonomy", "term"]
+
+# Lets abstracts and titles use LaTeX math between $...$ (or $$...$$ for
+# displayed math); it is typeset with KaTeX when the site is built.
+[markup.goldmark.extensions.passthrough]
+    enable = true
+    [markup.goldmark.extensions.passthrough.delimiters]
+        inline = [["$", "$"], ["\\(", "\\)"]]
+        block = [["$$", "$$"], ["\\[", "\\]"]]
+
+# Lets the templates resize photos in static/img automatically,
+# so the page loads small versions instead of the multi-MB originals.
+# Resizing drops color profiles, so save photos as sRGB first; iPhone
+# photos are Display P3 and would otherwise look duller and cooler:
+#   sips --matchTo "/System/Library/ColorSync/Profiles/sRGB Profile.icc" photo.jpg
+[module]
+    [[module.mounts]]
+        source = "static"
+        target = "static"
+    [[module.mounts]]
+        source = "assets"
+        target = "assets"
+    [[module.mounts]]
+        source = "static/img"
+        target = "assets/img"
+
+[params]
+    description = "Shiyue Li 李詩樂 (李诗乐), Donald J. Lewis Assistant Professor of Mathematics at the University of Michigan. Algebraic geometry and combinatorics."
+    description_photo = "avatar.jpg"
+    favicon = "favicon.png"
+    logo = "logo.png"
+
+[params.nav]
+    enable = true
+
+[params.hero]
+    enable = true
+    subtitle = "Shiyue Li 李詩樂"
+    position = "Donald J. Lewis Assistant Professor (non-tenure-track)"
+    affiliation = "Department of Mathematics, University of Michigan"
+    hero_right = [
+    "I am a Donald J. Lewis assistant professor at the [University of Michigan](https://lsa.umich.edu/math), mentored by [David Speyer](https://websites.umich.edu/~speyer/).",
+    "I work in algebraic geometry and combinatorics. More specifically, I study combinatorial structures in algebraic varieties and their moduli spaces. I am broadly interested in questions connected to number theory, algebraic topology, and algebraic K-theory.",
+    "From 2023 to 2025, I was a member at the [Institute for Advanced Study](https://www.ias.edu), mentored by [June Huh](https://web.math.princeton.edu/~huh/) and [Federico Ardila-Mantilla](https://fardila.com).",
+    "In 2023, I did my PhD in mathematics at [Brown University](https://mathematics.brown.edu/), where I was fortunate to be advised by [Melody Chan](https://www.math.brown.edu/mchan2/).",
+    "Prior, I spent wonderful four years at [Harvey Mudd College](https://www.hmc.edu); my undergrad thesis work was guided by [Dagan Karp](https://www.math.hmc.edu/~dk/).",
+    ]
+    # Highlighted note shown under the bio. Delete the line to hide it.
+    notice = "I am on the job market for academic positions, or research positions concerning AI safety and alignment (for general humanity or for mathematics), starting 2027."
+
+    # Profile photos in static/img. One is picked at random on each visit,
+    # shown whole at the same height as the first photo.
+    #   credit  Shown under the photo after "Photo credit:". Markdown works.
+    [[params.hero.photos]]
+        file = "avatar.jpg"
+        credit = "my friend, [Haoxing Du](https://www.haoxingdu.com)"
+    [[params.hero.photos]]
+        file = "headshot-ias.jpg"
+        credit = "Dan Komoda, Institute for Advanced Study"
+
+    # Links shown under your name.
+    [[params.hero.links]]
+        name = "Curriculum Vitae"
+        url = "/shiyueli-website-2026.pdf"
+    [[params.hero.links]]
+        name = "Google Scholar"
+        url = "https://scholar.google.com/citations?user=wnfrXdMAAAAJ&hl=en"
+    [[params.hero.links]]
+        name = "arXiv"
+        url = "https://arxiv.org/search/?query=%22shiyue+li%22&searchtype=all&source=header"
+    [[params.hero.links]]
+        name = "Email"
+        url = "mailto:shiyueli@umich.edu"
+
+# Papers are listed in data/papers.yaml
+[params.research]
+    enable = true
+    title = "Research"
+
+# Talks are listed in data/talks.yaml
+[params.talks]
+    enable = true
+    title = "Invited talks"
+    nav = "Talks"
+
+[params.teaching]
+    enable = true
+    title = "Lecture notes"
+
+[params.misc]
+    enable = true
+    title = "Music & Mountains"
+
+[params.expository]
+    enable = false
+    title = "Expository"
+
+[params.travel]
+    enable = false
+    title = "Travel"
+
+[params.footer]
+    enable = true
