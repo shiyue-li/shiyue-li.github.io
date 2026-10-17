@@ -167,18 +167,50 @@ a:hover { color: var(--accent-strong); }
 
 .hero-head {
   display: grid;
-  grid-template-columns: 11rem 1fr;
+  grid-template-columns: auto 1fr;
   align-items: center;
-  gap: 2.25rem;
+  gap: 2.5rem;
   margin-bottom: 2.5rem;
 }
 
+/* Every photo is as tall as the first one would be at 17rem wide. */
 .avatar {
-  width: 11rem;
-  height: 11rem;
-  object-fit: cover;
-  border-radius: 50%;
+  width: auto;
+  max-width: none;
+  height: calc(17rem * var(--photo-ratio, 1));
+  border-radius: 6px;
   background: var(--rule);
+}
+
+.avatar-figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min-content;
+  margin: 0;
+}
+
+.avatar-figure[hidden] { display: none; }
+
+.photo-credit {
+  max-width: 17rem;
+  margin-top: 0.65rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.photo-credit a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--rule);
+  text-underline-offset: 0.15em;
+}
+
+.photo-credit a:hover {
+  color: var(--accent);
+  text-decoration-color: currentColor;
 }
 
 .name {
@@ -187,24 +219,23 @@ a:hover { color: var(--accent-strong); }
   letter-spacing: -0.005em;
 }
 
+.nowrap { white-space: nowrap; }
+
 .role {
   margin: 0 0 1rem;
   color: var(--muted);
   line-height: 1.5;
+  text-wrap: pretty;
 }
 
 .profile-links {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.1rem;
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.profile-links li + li::before {
-  content: "·";
-  margin: 0 0.6rem;
-  color: var(--faint);
 }
 
 .profile-links a { font-weight: 500; }
@@ -331,8 +362,6 @@ a:hover { color: var(--accent-strong); }
   font-size: 0.95rem;
 }
 
-.paper-meta .venue { font-style: italic; }
-
 details.abstract { margin-top: 0.25rem; }
 
 details.abstract summary {
@@ -415,6 +444,8 @@ details.abstract p {
 }
 
 .aside { color: var(--muted); }
+.dated-list .aside a { color: inherit; }
+.dated-list .aside a:hover { color: var(--accent); }
 
 /* ---------- Prose sections ---------- */
 
@@ -496,28 +527,27 @@ details.abstract p {
 
   /* Photo and name side by side; title and links full width below. */
   .hero-head {
-    grid-template-columns: 5rem 1fr;
+    grid-template-columns: auto 1fr;
     gap: 1rem 1.1rem;
     margin-bottom: 1.75rem;
   }
 
-  .hero-id { display: contents; }
-  .avatar { width: 5rem; height: 5rem; }
-  .name { align-self: center; margin: 0; font-size: 1.6rem; }
+  .hero-id, .avatar-figure { display: contents; }
+  .avatar { grid-column: 1; grid-row: 1; height: calc(8rem * var(--photo-ratio, 1)); }
+  .name { grid-column: 2; grid-row: 1; align-self: center; margin: 0; font-size: 1.6rem; }
   .role, .profile-links { grid-column: 1 / -1; }
+
+  .photo-credit {
+    grid-column: 1 / -1;
+    grid-row: 4;
+    max-width: none;
+    margin: 0;
+    text-align: left;
+  }
   .role { margin: 0; }
 
-  .profile-links { gap: 0.5rem; }
-  .profile-links li + li::before { content: none; }
-
-  .profile-links a {
-    display: inline-block;
-    padding: 0.3rem 0.7rem;
-    background: var(--surface);
-    border: 1px solid var(--rule);
-    border-radius: 999px;
-    font-size: 0.88rem;
-  }
+  /* Roomier lines so each link is easy to tap. */
+  .profile-links a { display: inline-block; padding: 0.15rem 0; }
 
   .section { margin-top: 2.25rem; padding-top: 2.25rem; }
   .section-title { font-size: 1.45rem; }

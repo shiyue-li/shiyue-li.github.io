@@ -1,16 +1,33 @@
 {{ $hero := site.Params.hero }}
 <section id="about" class="hero">
-    <div class="hero-head">
-        {{ with resources.Get (printf "img/%s" $hero.avatar) }}
-        {{ $sm := .Fill "240x240 Center q85" }}
-        {{ $lg := .Fill "480x480 Center q85" }}
-        <img class="avatar" src="{{ $lg.RelPermalink }}" srcset="{{ $sm.RelPermalink }} 240w, {{ $lg.RelPermalink }} 480w" sizes="(max-width: 640px) 96px, 176px" width="176" height="176" alt="Photo of {{ site.Title }}">
+    {{/* Every photo is shown whole at the height of the first one. */}}
+    {{ $ratio := 1.0 }}
+    {{ with index $hero.photos 0 }}{{ with resources.Get (printf "img/%s" .file) }}{{ $ratio = div (float .Height) .Width }}{{ end }}{{ end }}
+    <div class="hero-head" style="{{ printf "--photo-ratio: %.4f" $ratio | safeCSS }}">
+        {{/* Every photo is rendered; the script below shows one at random. */}}
+        {{ range $i, $photo := $hero.photos }}
+        {{ with resources.Get (printf "img/%s" $photo.file) }}
+        {{ $sm := .Resize "280x q85" }}
+        {{ $lg := .Resize "560x q85" }}
+        <figure class="avatar-figure"{{ if gt $i 0 }} hidden{{ end }}>
+            <img class="avatar" src="{{ $lg.RelPermalink }}" srcset="{{ $sm.RelPermalink }} 280w, {{ $lg.RelPermalink }} 560w" sizes="(max-width: 640px) 128px, 272px" width="{{ $sm.Width }}" height="{{ $sm.Height }}" loading="lazy" alt="Photo of {{ site.Title }}">
+            {{ with $photo.credit }}<figcaption class="photo-credit">Photo credit: {{ . | markdownify }}</figcaption>{{ end }}
+        </figure>
         {{ end }}
+        {{ end }}
+        <script>
+            (function () {
+                var photos = document.querySelectorAll(".avatar-figure");
+                var pick = Math.floor(Math.random() * photos.length);
+                for (var i = 0; i < photos.length; i++) photos[i].hidden = i !== pick;
+            })();
+        </script>
         <div class="hero-id">
             <h1 class="name">{{ $hero.subtitle }}</h1>
             {{ if or $hero.position $hero.affiliation }}
             <p class="role">
-                {{- with $hero.position }}{{ . }}{{ end -}}
+                {{- /* Keep a parenthetical like "(non-tenure-track)" from breaking at its hyphens. */ -}}
+                {{- with $hero.position }}{{ replaceRE `(\([^)]*\))` `<span class="nowrap">$1</span>` (htmlEscape .) | safeHTML }}{{ end -}}
                 {{- if and $hero.position $hero.affiliation }}<br>{{ end -}}
                 {{- with $hero.affiliation }}{{ . }}{{ end -}}
             </p>

@@ -8,7 +8,7 @@
             <li><a href="{{ $home }}#about">About</a></li>
             {{ with site.Params.research }}{{ if .enable }}<li><a href="{{ $home }}#research">{{ .nav | default .title }}</a></li>{{ end }}{{ end }}
             {{ with site.Params.talks }}{{ if .enable }}<li><a href="{{ $home }}#talks">{{ .nav | default .title }}</a></li>{{ end }}{{ end }}
-            {{ with site.Params.teaching }}{{ if .enable }}<li><a href="{{ $home }}#teaching">{{ .nav | default .title }}</a></li>{{ end }}{{ end }}
+            {{ with site.Params.teaching }}{{ if .enable }}<li><a href="{{ $home }}#lecture-notes">{{ .nav | default .title }}</a></li>{{ end }}{{ end }}
             {{ with site.Params.expository }}{{ if .enable }}<li><a href="{{ $home }}#expository">{{ .nav | default .title }}</a></li>{{ end }}{{ end }}
             {{ with site.Params.travel }}{{ if .enable }}<li><a href="{{ $home }}#travel">{{ .nav | default .title }}</a></li>{{ end }}{{ end }}
             {{ with site.Params.misc }}{{ if .enable }}<li><a href="{{ $home }}#music">{{ .nav | default .title }}</a></li>{{ end }}{{ end }}
