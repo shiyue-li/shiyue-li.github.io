@@ -219,6 +219,13 @@ a:hover { color: var(--accent-strong); }
   letter-spacing: -0.005em;
 }
 
+.name-zh {
+  /* Yuji Mai is a Japanese brush face; it has the traditional forms of 李詩樂. */
+  font-family: "Yuji Mai", "Kaiti TC", "BiauKai", "Noto Serif TC", serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
 .nowrap { white-space: nowrap; }
 
 /* 1rem keeps "Donald J. Lewis Assistant Professor (non-tenure-track)"

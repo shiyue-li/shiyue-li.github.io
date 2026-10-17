@@ -23,7 +23,8 @@
             })();
         </script>
         <div class="hero-id">
-            <h1 class="name">{{ $hero.subtitle }}</h1>
+            {{/* Chinese characters in the name are set in a brush-calligraphy typeface. */}}
+            <h1 class="name">{{ replaceRE `(\p{Han}+)` `<span class="name-zh" lang="zh-Hant">$1</span>` (htmlEscape $hero.subtitle) | safeHTML }}</h1>
             {{ if or $hero.position $hero.affiliation }}
             <p class="role">
                 {{- /* Keep a parenthetical like "(non-tenure-track)" from breaking at its hyphens. */ -}}
