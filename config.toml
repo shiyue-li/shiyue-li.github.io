@@ -52,11 +52,11 @@ disableKinds = ["taxonomy", "term"]
     hero_right = [
     "I work in algebraic geometry and combinatorics. More specifically, I study combinatorial structures in algebraic varieties and their moduli spaces. I am broadly interested in questions connected to number theory, algebraic topology, and algebraic K-theory.",
     "From 2023 to 2025, I was a member at the [Institute for Advanced Study](https://www.ias.edu), mentored by [June Huh](https://web.math.princeton.edu/~huh/) and [Federico Ardila-Mantilla](https://fardila.com).",
-    "In 2023, I did my PhD in mathematics at [Brown University](https://mathematics.brown.edu/), where I was fortunate to be advised by [Melody Chan](https://www.math.brown.edu/mchan2/).",
-    "Prior, I spent wonderful four years at [Harvey Mudd College](https://www.hmc.edu); my undergrad thesis work was guided by [Dagan Karp](https://www.math.hmc.edu/~dk/).",
+    "In 2023, I received my PhD in mathematics from [Brown University](https://mathematics.brown.edu/), where I was fortunate to be advised by [Melody Chan](https://www.math.brown.edu/mchan2/).",
+    "Before that, I spent four wonderful years at [Harvey Mudd College](https://www.hmc.edu); my undergrad thesis work was guided by [Dagan Karp](https://www.math.hmc.edu/~dk/).",
     ]
     # Highlighted note shown under the bio. Delete the line to hide it.
-    notice = "I am on the job market for academic positions, or research positions concerning AI safety and alignment (for general humanity or for mathematics), starting 2027."
+    notice = "I am on the job market for academic positions, or research positions concerning AI safety and alignment (for humanity in general or for mathematics), starting in 2027."
 
     # Profile photos in static/img. One is picked at random on each visit,
     # shown whole at the same height as the first photo.
