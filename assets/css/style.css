@@ -219,8 +219,10 @@ a:hover { color: var(--accent-strong); }
   letter-spacing: -0.005em;
 }
 
-.name-zh {
-  /* Yuji Mai is a Japanese brush face; it has the traditional forms of 李詩樂. */
+/* Chinese text in the name and talk venues. Yuji Mai is a Japanese brush face;
+   it has traditional forms such as 李詩樂 and 蘇州大學, but not simplified ones like 苏. */
+.name-zh,
+.han {
   font-family: "Yuji Mai", "Kaiti TC", "BiauKai", "Noto Serif TC", serif;
   font-weight: 400;
   letter-spacing: 0.02em;
@@ -462,6 +464,25 @@ details.abstract p {
 }
 
 .dated-list a.video-link:hover { text-decoration: underline; }
+
+/* Talks: the venue first and prominent, the event name smaller below it. */
+.talks .venue {
+  display: block;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.talks .event {
+  display: block;
+  margin-top: 0.05rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.talks .event a { color: inherit; }
+.talks .event a:hover { color: var(--accent); }
+.talks .event a.video-link { margin-left: 0.3rem; color: var(--accent); }
 
 .aside { color: var(--muted); }
 

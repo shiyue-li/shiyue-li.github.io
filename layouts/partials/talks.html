@@ -1,12 +1,24 @@
 {{/* Talks come from data/talks.yaml */}}
 <section id="talks" class="section">
     <h2 class="section-title">{{ site.Params.talks.title }}</h2>
-    <ul class="dated-list">
+    <ul class="dated-list talks">
         {{ range $t := site.Data.talks }}
         <li>
             <span class="when">{{ $t.date }}</span>
-            <span class="what">{{ with $t.url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $t.title | markdownify }}</a>{{ else }}{{ $t.title | markdownify }}{{ end }}
-                {{- with $t.video }} <a class="video-link" href="{{ . }}" target="_blank" rel="noopener">Video</a>{{ end }}</span>
+            <span class="what">
+                {{- $venue := replaceRE `(\p{Han}+)` `<span class="han" lang="zh-Hant">$1</span>` (htmlEscape ($t.venue | default $t.title)) | safeHTML }}
+                {{- if and $t.url (not $t.event) }}
+                <a class="venue" href="{{ $t.url }}" target="_blank" rel="noopener">{{ $venue }}</a>
+                {{- else }}
+                <span class="venue">{{ $venue }}</span>
+                {{- end }}
+                {{- if or $t.event $t.video }}
+                <span class="event">
+                    {{- with $t.event }}{{ with $t.url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $t.event | markdownify }}</a>{{ else }}{{ $t.event | markdownify }}{{ end }}{{ end }}
+                    {{- with $t.video }} <a class="video-link" href="{{ . }}" target="_blank" rel="noopener">Video</a>{{ end -}}
+                </span>
+                {{- end }}
+            </span>
         </li>
         {{ end }}
     </ul>
