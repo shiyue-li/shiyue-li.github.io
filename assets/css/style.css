@@ -453,6 +453,16 @@ details.abstract p {
   text-decoration-color: currentColor;
 }
 
+.dated-list a.video-link {
+  margin-left: 0.4rem;
+  color: var(--accent);
+  font-size: 0.9rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.dated-list a.video-link:hover { text-decoration: underline; }
+
 .aside { color: var(--muted); }
 
 /* KaTeX math: a touch smaller than its 1.21em default so it sits evenly in body text. */

@@ -122,6 +122,9 @@
       url: https://www.daojihuang.me/
   venue: "International Mathematics Research Notices (2024)"
   venue_url: https://academic.oup.com/imrn/article-abstract/2024/12/9743/7654041?login=false
+  links:
+    - name: "Video"
+      url: https://youtu.be/-qpJqT5Wy0A
   abstract: >-
     We study the connection between multimatroids and moduli spaces of rational curves
     with cyclic action. Multimatroids are generalizations of matroids and delta-matroids
@@ -155,6 +158,9 @@
       url: https://pages.uoregon.edu/njp/
   venue: "Advances in Mathematics 441 (2024)"
   venue_url: https://www.sciencedirect.com/science/article/abs/pii/S0001870824000690
+  links:
+    - name: "Video"
+      url: https://youtu.be/XUNbpKGQZx4
   abstract: >-
     We study the $K$-rings of wonderful compactifications of hyperplane arrangement
     complements and of arbitrary matroids. We prove a Hirzebruch--Riemann--Roch-type

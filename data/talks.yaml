@@ -3,6 +3,7 @@
 #   date   Month and year, e.g. "Aug 2027".
 #   title  Event or seminar name. Markdown works.
 #   url    Optional link to the event page.
+#   video  Optional link to a recording of the talk.
 
 - date: "Aug 2027"
   title: "LG&TBQ 2027, Bielefeld, Germany"
@@ -50,6 +51,11 @@
 - date: "Oct 2024"
   title: "Geometry of Matroids, Institute for Advanced Study"
   url: https://www.ias.edu/math/events/geometry-matroids-workshop
+  video: https://youtu.be/-qpJqT5Wy0A
+
+- date: "Sep 2024"
+  title: "Short Talks by Postdoctoral Members, Institute for Advanced Study"
+  video: https://youtu.be/XUNbpKGQZx4
 
 - date: "Sep 2024"
   title: "Moduli spaces of curves, moduli spaces of graphs and graph complexes, ETH Zurich"
@@ -94,6 +100,10 @@
 - date: "Oct 2023"
   title: "Preparatory lectures for Chow Lectures, Max Planck Institute, Leipzig, Germany"
   url: https://www.mis.mpg.de/calendar/conferences/2023/chow.html
+
+- date: "Sep 2023"
+  title: "Short Talks by Postdoctoral Members, Institute for Advanced Study"
+  video: https://youtu.be/NE2Bs7CN_NM
 
 - date: "Sep 2023"
   title: "Bernoulli Center Workshop, EPFL, Switzerland"

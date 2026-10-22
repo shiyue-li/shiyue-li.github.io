@@ -5,7 +5,8 @@
         {{ range $t := site.Data.talks }}
         <li>
             <span class="when">{{ $t.date }}</span>
-            <span class="what">{{ with $t.url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $t.title | markdownify }}</a>{{ else }}{{ $t.title | markdownify }}{{ end }}</span>
+            <span class="what">{{ with $t.url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $t.title | markdownify }}</a>{{ else }}{{ $t.title | markdownify }}{{ end }}
+                {{- with $t.video }} <a class="video-link" href="{{ . }}" target="_blank" rel="noopener">Video</a>{{ end }}</span>
         </li>
         {{ end }}
     </ul>
