@@ -6,6 +6,8 @@
 #   venue      Optional journal or proceedings, with venue_url.
 #   links      Optional extra links (slides, code, ...), each with a name and url.
 #   abstract   Optional. Hidden until the reader clicks "Abstract". Math: $\psi$, $h^*$, ...
+#
+# The CV (cv/) is built from this file too, by cv/generate.py.
 
 - title: "Chow polynomials and chain polynomials of matroids are not log-concave"
   url: https://arxiv.org/abs/2610.17135
@@ -219,7 +221,7 @@
     - name: "Stefano Serpente"
     - name: "Claudia He Yun"
       url: https://www.claudiayun.com/
-  venue: "Advances in Geometry 23(3) (2023)"
+  venue: "Advances in Geometry 23 (2023)"
   venue_url: https://www.degruyter.com/document/doi/10.1515/advgeom-2023-0009/html
   links:
     - name: "Slides"
@@ -253,7 +255,7 @@
   coauthors:
     - name: "Marvin Anas Hahn"
       url: https://www.marvinanashahn.com/
-  venue: "Combinatorial Theory, 2(3) (2022)"
+  venue: "Combinatorial Theory 2 (2022)"
   venue_url: https://escholarship.org/uc/item/6569z31w#main
   abstract: >-
     We compute the intersection numbers of tropical $\psi$-classes on tropical
@@ -266,7 +268,7 @@
       url: https://sites.google.com/view/siddarthkannan/about-me
     - name: "Dagan Karp"
       url: https://www.math.hmc.edu/~dk/
-  venue: "Journal of Combinatorial Theory, Series A. 178C (2021)"
+  venue: "Journal of Combinatorial Theory, Series A 178 (2021)"
   venue_url: https://www.sciencedirect.com/science/article/pii/S0097316520301400
   abstract: >-
     We compute the Chow ring of heavy/light Hassett spaces of genus zero via tropical

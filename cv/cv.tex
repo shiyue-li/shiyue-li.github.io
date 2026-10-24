@@ -1,0 +1,43 @@
+% Curriculum vitae of Shiyue Li.
+%
+% Build it, and put the PDF where the website links it, with
+%   sh cv/build.sh
+% GitHub Actions does the same on every push, so the website's CV is always
+% current.
+%
+% Talks and papers are not written here: cv/generate.py writes
+% sections/talks.tex and sections/papers.tex from the website's
+% data/talks.yaml and data/papers.yaml, so add a talk or paper there. Every
+% other section is edited in sections/.
+%
+% Fonts: Shippori Mincho and Yuji Mai (SIL Open Font License), which
+% cv/get-fonts.sh downloads into cv/fonts/; EB Garamond and Libertinus come
+% with TeX Live.
+\documentclass[10pt]{article}
+\usepackage{cv}
+
+\hypersetup{pdftitle={Shiyue Li: Curriculum Vitae}, pdfauthor={Shiyue Li}}
+
+\begin{document}
+
+\cvheader{Shiyue Li}{李詩樂}
+  {Donald J. Lewis Assistant Professor (non-tenure-track)\\
+   Department of Mathematics, University of Michigan}
+  {\color{moss}\href{mailto:shiyueli@umich.edu}{shiyueli@umich.edu}\\
+   \href{https://www.shiyue.li}{www.shiyue.li}}
+
+\vspace{14pt}
+Research interests: algebraic geometry, combinatorics, tropical geometry.
+
+\input{sections/employment}
+\input{sections/education}
+\input{sections/papers}
+\input{sections/awards}
+\input{sections/talks}
+\input{sections/service}
+\input{sections/teaching}
+\input{sections/mentoring}
+\input{sections/outreach}
+\input{sections/other}
+
+\end{document}

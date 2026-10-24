@@ -3,6 +3,7 @@
     <h2 class="section-title">{{ site.Params.talks.title }}</h2>
     <ul class="dated-list talks">
         {{ range $t := site.Data.talks }}
+        {{ if $t.cv_only }}{{ continue }}{{ end }}
         <li>
             <span class="when">{{ $t.date }}</span>
             <span class="what">

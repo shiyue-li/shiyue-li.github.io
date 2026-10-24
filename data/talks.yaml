@@ -8,6 +8,9 @@
 #   event  Optional seminar or workshop name, shown under the venue. Markdown works.
 #   url    Optional link to the event page (opened from the event name).
 #   video  Optional link to a recording of the talk.
+#   cv_only  Optional; true lists the talk on the CV but not on the website.
+#
+# The CV (cv/) is built from this file too, by cv/generate.py.
 
 - date: "Aug 2027"
   venue: "Universität Bielefeld"
@@ -78,6 +81,11 @@
   url: https://www.ias.edu/math/events/geometry-matroids-workshop
   video: https://youtu.be/-qpJqT5Wy0A
 
+- date: "Oct 2024"
+  venue: "Institute for Advanced Study"
+  event: "“What is...?” Seminar"
+  cv_only: true
+
 - date: "Sep 2024"
   venue: "Institute for Advanced Study"
   event: "Short Talks by Postdoctoral Members"
@@ -119,6 +127,11 @@
   event: "Mathematical Conversations"
   url: https://www.ias.edu/event-series/mathematical-conversations
 
+- date: "Mar 2024"
+  venue: "Institute for Advanced Study"
+  event: "“What is...?” Seminar"
+  cv_only: true
+
 - date: "Feb 2024"
   venue: "University of Minnesota"
   event: "Combinatorics Seminar"
@@ -131,7 +144,7 @@
 
 - date: "Jan 2024"
   venue: "Online"
-  event: "F1 World Seminar"
+  event: "$F_1$ World Seminar"
   url: https://funworldseminar.wordpress.com/2022/11/15/the-sun-also-rises-a-review/
 
 - date: "Oct 2023"
@@ -229,6 +242,11 @@
   venue: "Joint Mathematics Meetings"
   event: "AWM Special Session (online)"
   url: https://www.jointmathematicsmeetings.org//jmm
+
+- date: "Apr 2022"
+  venue: "Brown University"
+  event: "Combinatorial and Nonlinear Day"
+  cv_only: true
 
 - date: "Dec 2021"
   venue: "Canadian Mathematical Society Winter Meeting"

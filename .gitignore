@@ -8,3 +8,22 @@
 # Mac Finder and Claude Code files
 .DS_Store
 .claude/
+
+# CV: build output, the fonts it needs, and the sections cv/generate.py
+# writes from data/*.yaml (see cv/cv.tex)
+/cv/build/
+/cv/fonts/
+/cv/sections/talks.tex
+/cv/sections/papers.tex
+/cv/*.aux
+/cv/*.log
+/cv/*.fls
+/cv/*.fdb_latexmk
+/cv/*.out
+/cv/*.xdv
+/cv/*.synctex.gz
+/cv/cv.pdf
+
+# The CV PDF is built by cv/build.sh (GitHub Actions on every push)
+/static/shiyueli-cv.pdf
+/static/shiyueli-website-2026.pdf
