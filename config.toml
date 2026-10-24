@@ -71,7 +71,8 @@ disableKinds = ["taxonomy", "term"]
     # Links shown under your name.
     [[params.hero.links]]
         name = "Curriculum Vitae"
-        url = "/shiyueli-website-2026.pdf"
+        # Built from cv/ and data/*.yaml on every push (see cv/build.sh).
+        url = "/shiyueli-cv.pdf"
     [[params.hero.links]]
         name = "Google Scholar"
         url = "https://scholar.google.com/citations?user=wnfrXdMAAAAJ&hl=en"

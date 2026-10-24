@@ -1,4 +1,4 @@
-# Builds the site with Hugo and publishes it to GitHub Pages (www.shiyue.li)
+# Builds the CV and the site with Hugo and publishes them to GitHub Pages (www.shiyue.li)
 # on every push to master. It can also be run by hand from the Actions tab.
 #
 # Based on Hugo's official workflow:
@@ -53,6 +53,17 @@ jobs:
 
       - name: Configure Git
         run: git config --global core.quotepath false
+
+      # Typesets the CV from cv/ and data/*.yaml into static/shiyueli-cv.pdf,
+      # so the website's "Curriculum Vitae" link is always current. If it
+      # fails, the deploy stops and the live site stays as it was.
+      - name: Build CV
+        env:
+          # TeX Live's official image, full scheme (XeLaTeX, EB Garamond, Libertinus)
+          TEXLIVE_IMAGE: texlive/texlive:latest
+        run: |
+          python3 -c 'import yaml' 2>/dev/null || sudo apt-get install -y python3-yaml
+          sh cv/build.sh
 
       - name: Cache restore
         id: cache-restore
