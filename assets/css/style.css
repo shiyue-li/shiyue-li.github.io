@@ -1,17 +1,20 @@
 /* ---------- Tokens ---------- */
 
+/* Japandi palette: washi paper, sumi ink, sand hairlines, moss accent. */
 :root {
-  --bg: #f7f4ee;
-  --surface: #fdfbf7;
-  --text: #23211d;
-  --muted: #6b655b;
-  --faint: #8f887c;
-  --rule: #e3dcd0;
-  --accent: #3a5fa8;
-  --accent-strong: #234479;
-  --accent-soft: rgba(58, 95, 168, 0.3);
+  --bg: #f0ebe2;
+  --surface: #f8f4ed;
+  --text: #29261f;
+  --muted: #6a6357;
+  --faint: #776f63;
+  --rule: #dbd2c4;
+  --accent: #4f6a44;
+  --accent-strong: #33472c;
+  --accent-soft: rgba(79, 106, 68, 0.35);
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .32 0 0 0 0 .26 0 0 0 0 .18 .09 0 0 0 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 
-  --serif: "Literata", "Palatino Linotype", Palatino, "Book Antiqua", "Noto Serif TC", "Songti TC", serif;
+  --serif: "Shippori Mincho", "Palatino Linotype", Palatino, "Book Antiqua", "Noto Serif TC", "Songti TC", serif;
+  --display: var(--serif);
   --measure: 46rem;
   --gutter: 1.5rem;
   --nav-h: 4rem;
@@ -21,15 +24,16 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #1b1a18;
-    --surface: #23211e;
-    --text: #e9e4da;
-    --muted: #aaa397;
-    --faint: #857f74;
-    --rule: #35322c;
-    --accent: #95b3ea;
-    --accent-strong: #c2d4f5;
-    --accent-soft: rgba(149, 179, 234, 0.35);
+    --bg: #1d1b18;
+    --surface: #252320;
+    --text: #e8e2d5;
+    --muted: #ada594;
+    --faint: #91897b;
+    --rule: #38342d;
+    --accent: #a8bf92;
+    --accent-strong: #c9dbb6;
+    --accent-soft: rgba(168, 191, 146, 0.35);
+    --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 .96 0 0 0 0 .9 .05 0 0 0 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
     color-scheme: dark;
   }
 }
@@ -49,11 +53,13 @@ html {
 
 body {
   margin: 0;
-  background: var(--bg);
+  background-color: var(--bg);
+  background-image: var(--grain);
   color: var(--text);
   font-family: var(--serif);
   font-size: 1.0625rem;
-  line-height: 1.65;
+  font-weight: 600;
+  line-height: 1.7;
   font-optical-sizing: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -62,7 +68,7 @@ body {
 
 img { display: block; max-width: 100%; height: auto; }
 
-h1, h2, h3 { margin: 0; font-weight: 500; line-height: 1.25; }
+h1, h2, h3 { margin: 0; font-weight: 700; line-height: 1.25; }
 
 p { margin: 0 0 1em; }
 
@@ -215,8 +221,10 @@ a:hover { color: var(--accent-strong); }
 
 .name {
   margin-bottom: 0.4rem;
+  font-family: var(--display);
   font-size: 2.3rem;
-  letter-spacing: -0.005em;
+  font-weight: 800;
+  letter-spacing: 0.005em;
 }
 
 /* Chinese text in the name and talk venues. Yuji Mai is a Japanese brush face;
@@ -250,7 +258,7 @@ a:hover { color: var(--accent-strong); }
   list-style: none;
 }
 
-.profile-links a { font-weight: 500; }
+.profile-links a { font-weight: 700; }
 
 .bio a,
 .prose p a,
@@ -276,15 +284,25 @@ a:hover { color: var(--accent-strong); }
 
 /* ---------- Sections ---------- */
 
-.section {
-  margin-top: 3rem;
-  padding-top: 3rem;
-  border-top: 1px solid var(--rule);
-}
+/* Sections are separated by space and a short ink stroke, not full-width rules. */
+.section { margin-top: 5rem; }
 
 .section-title {
   margin-bottom: 1.75rem;
-  font-size: 1.65rem;
+  font-family: var(--display);
+  font-size: 1.7rem;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+.section-title::before {
+  content: "";
+  display: block;
+  width: 1.75rem;
+  height: 2px;
+  margin-bottom: 1rem;
+  border-radius: 1px;
+  background: var(--accent);
 }
 
 .section-head {
@@ -300,7 +318,9 @@ a:hover { color: var(--accent-strong); }
 
 .subsection-title {
   margin: 2.25rem 0 0.6rem;
+  font-family: var(--display);
   font-size: 1.2rem;
+  font-weight: 800;
 }
 
 .section-title + .subsection-title,
@@ -350,6 +370,7 @@ a:hover { color: var(--accent-strong); }
 .paper-title {
   margin-bottom: 0.3rem;
   font-size: 1.12rem;
+  font-weight: 800;
   line-height: 1.4;
 }
 
@@ -469,7 +490,7 @@ details.abstract p {
 .talks .venue {
   display: block;
   color: var(--text);
-  font-weight: 500;
+  font-weight: 800;
 }
 
 .talks .event {
@@ -514,7 +535,6 @@ details.abstract p {
   margin-top: 0.6rem;
   color: var(--muted);
   font-size: 0.88rem;
-  font-style: italic;
 }
 
 /* ---------- Footer ---------- */
@@ -593,7 +613,7 @@ details.abstract p {
   /* Roomier lines so each link is easy to tap. */
   .profile-links a { display: inline-block; padding: 0.15rem 0; }
 
-  .section { margin-top: 2.25rem; padding-top: 2.25rem; }
+  .section { margin-top: 3.5rem; }
   .section-title { font-size: 1.45rem; }
 
   .paper { grid-template-columns: 1.5rem 1fr; gap: 0 0.6rem; }
