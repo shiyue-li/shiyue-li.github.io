@@ -7,10 +7,20 @@
         {{/* Every photo is rendered; the script below shows one at random. */}}
         {{ range $i, $photo := $hero.photos }}
         {{ with resources.Get (printf "img/%s" $photo.file) }}
-        {{ $sm := .Resize "280x q85" }}
-        {{ $lg := .Resize "560x q85" }}
+        {{/* Widths up to 4x the shown size, so high-density screens and zoom stay sharp.
+             $k is this photo's shown width in units of its row height (17rem, 8rem on phones). */}}
+        {{ $res := . }}
+        {{ $k := div $ratio (div (float .Height) .Width) }}
+        {{ $srcset := slice }}
+        {{ range $w := slice 280 560 840 1120 }}
+        {{ if le $w $res.Width }}
+        {{ $srcset = $srcset | append (printf "%s %dw" ($res.Resize (printf "%dx Lanczos q90" $w)).RelPermalink $w) }}
+        {{ end }}
+        {{ end }}
+        {{ $src := .Resize "560x Lanczos q90" }}
+        {{ $sm := .Resize "280x Lanczos q90" }}
         <figure class="avatar-figure"{{ if gt $i 0 }} hidden{{ end }}>
-            <img class="avatar" src="{{ $lg.RelPermalink }}" srcset="{{ $sm.RelPermalink }} 280w, {{ $lg.RelPermalink }} 560w" sizes="(max-width: 640px) 128px, 272px" width="{{ $sm.Width }}" height="{{ $sm.Height }}" loading="lazy" alt="Photo of {{ site.Title }}">
+            <img class="avatar" src="{{ $src.RelPermalink }}" srcset="{{ delimit $srcset ", " }}" sizes="{{ printf "(max-width: 640px) %.2frem, %.2frem" (mul 8 $k) (mul 17 $k) }}" width="{{ $sm.Width }}" height="{{ $sm.Height }}" loading="lazy" alt="Photo of {{ site.Title }}">
             {{ with $photo.credit }}<figcaption class="photo-credit">Photo credit: {{ . | markdownify }}</figcaption>{{ end }}
         </figure>
         {{ end }}
