@@ -37,8 +37,9 @@
             <h1 class="name">{{ replaceRE `(\p{Han}+)` `<span class="name-zh" lang="zh-Hant">$1</span>` (htmlEscape $hero.subtitle) | safeHTML }}</h1>
             {{ if or $hero.position $hero.affiliation }}
             <p class="role">
-                {{- /* Keep a parenthetical like "(non-tenure-track)" from breaking at its hyphens. */ -}}
-                {{- with $hero.position }}{{ replaceRE `(\([^)]*\))` `<span class="nowrap">$1</span>` (htmlEscape .) | safeHTML }}{{ end -}}
+                {{- /* A closing parenthetical like "(non-tenure-track)" stays with the word
+                       before it, so it never wraps onto a line of its own. */ -}}
+                {{- with $hero.position }}<span class="position">{{ replaceRE `(\S+ \([^)]*\))` `<span class="nowrap">$1</span>` (htmlEscape .) | safeHTML }}</span>{{ end -}}
                 {{- if and $hero.position $hero.affiliation }}<br>{{ end -}}
                 {{- with $hero.affiliation }}{{ . }}{{ end -}}
             </p>

@@ -47,7 +47,7 @@ disableKinds = ["taxonomy", "term"]
 [params.hero]
     enable = true
     subtitle = "Shiyue Li 李詩樂"
-    position = "Donald J. Lewis Research Assistant Professor"
+    position = "Donald J. Lewis Research Assistant Professor (non-tenure-track)"
     affiliation = "Department of Mathematics, University of Michigan"
     hero_right = [
     "I work in algebraic geometry and combinatorics. More specifically, I study combinatorial structures in algebraic varieties and their moduli spaces. I am broadly interested in questions connected to number theory, algebraic topology, and algebraic K-theory.",

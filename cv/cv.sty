@@ -78,13 +78,14 @@
 \fancyfoot[R]{\footnotesize\cvlight\thepage\ / \pageref*{LastPage}}
 
 % \cvheader{name}{chinese name}{position and affiliation}{contact lines}
+% The left side is wide enough for the full title on one line.
 \newcommand{\cvheader}[4]{%
-  \begin{minipage}[b]{0.66\linewidth}
+  \begin{minipage}[b]{0.74\linewidth}
     {\cvheavy\fontsize{22}{27}\selectfont #1}\hspace{0.4em}{\cvhanfont\fontsize{20}{27}\selectfont #2}\par
     \vspace{6pt}
     {\cvlight #3}
   \end{minipage}\hfill
-  \begin{minipage}[b]{0.32\linewidth}
+  \begin{minipage}[b]{0.24\linewidth}
     \raggedleft\cvlight #4
   \end{minipage}\par}
 
