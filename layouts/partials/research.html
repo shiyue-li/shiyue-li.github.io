@@ -23,6 +23,7 @@
                     {{- end }}
                     {{ with $c.url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $c.name }}</a>{{ else }}{{ $c.name }}{{ end }}
                     {{- end -}}
+                    {{- with $p.author_note }}, {{ . }}{{ end -}}
                 </p>
                 {{ end }}
 

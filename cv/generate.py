@@ -59,6 +59,8 @@ def papers():
     lines = ["\\cvsection{Preprints and Publications}", ""]
     for i, p in enumerate(entries):
         coauthors = and_list([FULL_NAMES.get(c["name"], c["name"]) for c in p.get("coauthors") or []])
+        if p.get("author_note"):
+            coauthors += ", " + p["author_note"]
         if p.get("venue"):
             where, where_url = tex(p["venue"]), url(p.get("venue_url"))
         else:

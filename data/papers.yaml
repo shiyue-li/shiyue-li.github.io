@@ -3,6 +3,7 @@
 #   title      Paper title. Markdown works, and LaTeX math between $...$, e.g. $K$-rings.
 #   url        Main link for the title (usually arXiv).
 #   coauthors  Optional list of collaborators, each with a name and optional url.
+#   author_note  Optional text shown after the coauthors, e.g. "with substantial assistance by LLMs".
 #   venue      Optional journal or proceedings, with venue_url.
 #   links      Optional extra links (slides, code, ...), each with a name and url.
 #   abstract   Optional. Hidden until the reader clicks "Abstract". Math: $\psi$, $h^*$, ...
@@ -18,6 +19,7 @@
       url: https://sites.google.com/view/basilecoron/accueil/
     - name: "Chris Eur"
       url: https://www.math.cmu.edu/~ceur/
+  author_note: "with substantial assistance by LLMs"
   abstract: >-
     We construct explicit counterexamples from finite geometries to log-concavity of
     Chow polynomials, chain polynomials, and augmented Chow polynomials of matroids,
