@@ -51,6 +51,7 @@ disableKinds = ["taxonomy", "term"]
     affiliation = "Department of Mathematics, University of Michigan"
     hero_right = [
     "I work in algebraic geometry and combinatorics. More specifically, I study combinatorial structures in algebraic varieties and their moduli spaces. I am broadly interested in questions connected to number theory, algebraic topology, and algebraic K-theory.",
+    "In recent years, I have been focused on “positivity” phenomena in geometry, topology, and combinatorics. For instance, if an algebraic invariant (a polynomial invariant or function) of a geometric space is nonnegative, unimodal, log-concave, or has constraints on its solutions, such as having its zeros concentrated on the real line, the unit circle, or the critical line, etc., what can we say about the geometry, topology, and combinatorics of the space? Answers to such questions have led me to surprising connections to statistical physics, PDEs, and coding theory.",
     "From 2023 to 2025, I was a member at the [Institute for Advanced Study](https://www.ias.edu), mentored by [June Huh](https://web.math.princeton.edu/~huh/) and [Federico Ardila-Mantilla](https://fardila.com).",
     "In 2023, I received my PhD in mathematics from [Brown University](https://mathematics.brown.edu/), where I was fortunate to be advised by [Melody Chan](https://www.math.brown.edu/mchan2/).",
     "Before that, I spent four wonderful years at [Harvey Mudd College](https://www.hmc.edu); my undergrad thesis work was guided by [Dagan Karp](https://www.math.hmc.edu/~dk/).",
