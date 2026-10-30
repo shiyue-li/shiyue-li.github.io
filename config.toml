@@ -56,7 +56,7 @@ disableKinds = ["taxonomy", "term"]
     "Before that, I spent four wonderful years at [Harvey Mudd College](https://www.hmc.edu); my undergrad thesis work was guided by [Dagan Karp](https://www.math.hmc.edu/~dk/).",
     ]
     # Highlighted note shown under the bio. Delete the line to hide it.
-    notice = "I am on the job market for academic positions, or research positions concerning AI safety and alignment (for humanity in general or for mathematics), starting in 2027."
+    notice = "In Fall 2026, I am on the job market for academic positions, or research positions concerning AI safety and alignment which start in 2027."
 
     # Profile photos in static/img. One is picked at random on each visit,
     # shown whole at the same height as the first photo.
